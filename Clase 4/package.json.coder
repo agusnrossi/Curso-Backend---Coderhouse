@@ -1,0 +1,12 @@
+{
+  "name": "01-moduloscore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "00-Basics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "coderhouse",
+  "license": "ISC"
+}
