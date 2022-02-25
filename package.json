@@ -1,0 +1,23 @@
+{
+  "name": "curso-backend---coderhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agusnrossi/Curso-Backend---Coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agusnrossi/Curso-Backend---Coderhouse/issues"
+  },
+  "homepage": "https://github.com/agusnrossi/Curso-Backend---Coderhouse#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
