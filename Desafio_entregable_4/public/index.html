@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
-    <h1>Formulario de productos</h1>
-    <form action="/api/productos/save" method="POST">
-      <label for="nombre">Titulo :</label>
-      <input type="text" name="title" />
-      <br />
-      <label for="precio">Precio :</label>
-      <input type="text" name="price" />
-      <br />
-      <label for="categoria">url :</label>
-      <input type="url" name="thumbnail" />
-      <br />
-      <button type="submit">Enviar</button>
-    </form>
+    <div>
+      <h1>Formulario de productos</h1>
+      <form action="/api/productos/save" method="POST" class="form_producto">
+        <label for="nombre">Titulo :</label>
+        <input type="text" name="title" class="form_producto_input" />
+        <br />
+        <label for="precio">Precio :</label>
+        <input type="text" name="price" class="form_producto_input" />
+        <br />
+        <label for="categoria">url :</label>
+        <input
+          type="url"
+          name="thumbnail"
+          class="form_producto_input"
+          id="url"
+        />
+        <br />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </body>
 </html>
