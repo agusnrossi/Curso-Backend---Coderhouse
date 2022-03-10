@@ -1,0 +1,18 @@
+.midlaner {
+  background-color: #c4c4c4;
+}
+
+.toplaner {
+  background-color: #eed706;
+}
+
+li {
+  list-style-type: none;
+  width: 10%;
+  border: 1px solid black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "datospersonales",
+  "version": "1.0.0",
+  "description": "",
+  "main": "datosPersonales.js",
+  "scripts": {
+    "start":"nodemon datosPersonales.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
