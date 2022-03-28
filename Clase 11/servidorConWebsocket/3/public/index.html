@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servidor con Websocket - 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="/socket.io/socket.io.js"></script>
 
 </head>
@@ -13,10 +15,11 @@
 <body>
     <h1>Clientes Websockets</h1>
 
-    <input type="text">
-    <button>Enviar</button>
-    <p></p>
-
+    <div id="chat-window">
+        <input type="text" id="chat-window-input" placeholder="Escribe aqui el mensaje">
+        <button id="chat-window-button">Enviar</button>
+        <p></p>
+    </div>
     <script src="js/main.js"></script>
 </body>
 
