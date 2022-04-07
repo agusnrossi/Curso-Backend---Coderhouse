@@ -1,0 +1,19 @@
+{
+  "name": "primer_entrega_proyecto_final",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "keywords": [],
+  "description": ""
+}
