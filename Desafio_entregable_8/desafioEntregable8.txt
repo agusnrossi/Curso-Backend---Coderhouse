@@ -1,0 +1,66 @@
+
+use ecommerce
+
+db.createCollection("productos")
+db.createCollection("mensajes")
+
+
+
+1 y2 )
+db.productos.insertMany([{title:"Teclado" , price:1100 ,thumbnail: " "},{title:"Mouse", price:450 ,thumbnail: " "}, {title:"laptop", price:4240 , thumbnail: " "},{title:"webcam", price:120, thumbnail:" "},{title:"mousepad", price:580, thumbnail:" "},{ title:"Silla Ergo", price:1700, thumbnail: ""}, {title:"Google Home", price: 2300, thumbnail: ""},{title: "smartwatch", price:3350, thumbnail: " "}, {title:"monitor", 
+price:4990, thumbnail: ""},{title:"smartTV" , price:3855 , thumbnail: ""}])
+
+db.mensajes.insertMany([{user: "agusr@gmail.com",date: new Date(),message: "Hola, buenos dias!"},
+{user: "jm@gmail.com",date: new Date(),message: "Hola, que tal como estas?"},
+{user: "agusr@gmail.com",date: new Date(),message: "te queda stock de mousepad?"},
+{user: "jm@gmail.com",date: new Date(),message: " Estoy buscando un monitor y lo necesito en seguida, cuanto es la demora?"},
+{user: "lp@gmail.com",date: new Date(),message: "Hola, buenos dias!"},
+{user: "lp@gmail.com",date: new Date(),message: "quisiera saber el precio del smartwatch"},
+{user: "agusr@gmail.com",date: new Date(),message: "Muchas gracias!!"},
+{user: "aao@gmail.com",date: new Date(),message: "hola, te quedaron teclados?"},
+{user: "jm@gmail.com",date: new Date(),message: "de nada"},
+{user: "lp@gmail.com",date: new Date(),message: "Adios"}])
+
+
+
+3)
+db.productos.find()
+db.mensajes.find()
+
+
+
+4)
+db.mensajes.count()
+db.productos.count()
+
+
+5)
+a) db.productos.insert({title :"Game Boy Color" , price : 850 ,thumbnail: " "})
+
+b)i) db.productos.find({price:{$lt:1000}})
+
+ii) db.productos.find({$and:[{price:{$gte:1000 , $lte:3000}}]})
+
+iii) db.productos.find({price:{$gt:3000}})
+
+iv)db.productos.find().skip(2).limit(1).sort({price:1})
+
+
+c)
+  db.productos.updateMany({},{$set:{"stock":100}},{multi:true},{upsert:true})
+
+d)
+  db.productos.updateMany({"price":{$gt:4000}},{$set:{"stock":0}})
+
+e)
+  db.productos.deleteMany({"price":{$lt:1000}})
+
+
+6)
+  
+ db.createUser({user:"pepe", pwd:"asd456", roles:[{role: "read" , db:"ecommerce"}]})
+ mongo -u pepe -p asd456 --authenticationDatabase ecommerce
+
+
+
+
