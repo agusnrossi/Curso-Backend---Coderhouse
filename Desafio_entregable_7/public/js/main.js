@@ -12,7 +12,7 @@ form.addEventListener('submit', e => {
         price:form[1].value,
         thumbnail: form[2].value,
     }
-    socket.emit('update', product));
+    socket.emit('update', product);
     form.reset();
 })
 
