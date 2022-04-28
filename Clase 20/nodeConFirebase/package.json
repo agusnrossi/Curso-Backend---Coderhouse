@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "name": "nodeconfirebase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  
+  "scripts": {
+  "start": "nodemon index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+  
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+   
+  "firebase": "^9.6.11", 
+  "firebase-admin": "^10.1.0",
+  "nodemon": "^2.0.15"
+  
+  }
+}
