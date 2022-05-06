@@ -20,7 +20,7 @@ class Products {
   }
 
   async getProducts() {
-    await this.initProduct();
+    await initProduct();
     try {
       const products = await selectProducts();
       return products;
@@ -50,7 +50,7 @@ class Products {
   }
 
   async saveProduct(product) {
-    const products = await this.getProducts();
+    const products = await getProducts();
     let newID
     if (products.length == 0) {
       newID = 1;
