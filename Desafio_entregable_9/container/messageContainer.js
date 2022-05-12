@@ -1,8 +1,5 @@
 const { normalize, denormalize, schema } = require('normalizr');
-const { Message } = require('../models/message');
-
-
-
+const {mensajes} = require('../models/message');
 
 class Messages {
     constructor() {
@@ -11,10 +8,10 @@ class Messages {
 
     async getMessage() {
         try {
-            return this.normalizeMessages(await Message.find())
+            return this.normalizeMessages(await mensajes.find())
 
         } catch (err) {
-            console.log(err);
+            throw err
         }
 
     }
@@ -23,13 +20,13 @@ class Messages {
 
         try {
             console.log(message)
-            return Message.create(message)
+            return mensajes.create(message)
         } catch (err) {
             throw err
         }
     }
 
- normalizeMessages(message) {
+ normalizeMessages(mensajes) {
 
     const schemaAuthor = new schema.Entity('author', {}, { idAttribute: 'authorEmail' });
 
@@ -38,12 +35,12 @@ class Messages {
     }, { idAttribute: '_id' });
 
     const schemaMssgs = new schema.Entity('posts', {
-        message: [schemaMsg]
+        mensajes: [schemaMsg]
     }, { idAttribute: 'id' });
 
     let mssgsId = {
         id: 'mensajes',
-        messaage: msjs.map(mensaje => ({ ...msjs._doc, _id: JSON.stringify(msjs._id) }))
+        mensajes: mensajes.map(mensaje => ({ ...mensaje._doc, _id: JSON.stringify(mensaje._id) }))
     }
 
     let mssgsIdNor = normalize(mssgsId, schemaMssgs);

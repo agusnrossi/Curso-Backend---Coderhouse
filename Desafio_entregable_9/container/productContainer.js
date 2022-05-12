@@ -1,4 +1,4 @@
-const { Product } = require('../models/products');
+const productos = require('../models/products');
 
 class Products {
 
@@ -11,9 +11,9 @@ class Products {
 
 
   async getProducts(id) {
-    this.products = await Product.find();
+    this.products = await productos.find();
     if (id) {
-      const product = await Product.findById(id);
+      const product = await productos.findById(id);
       if (product.length === 0) {
         return { error: 'producto no encontrado.' }
       }
@@ -26,11 +26,11 @@ class Products {
   };
 
   async addProduct(product) {
-    return await Product.create(product);
+    return await productos.create(product);
   };
 
   async updateProduct(product) {
-    const res = await Product.updateOne({ _id: product.id }, { $set: { ...product } });
+    const res = await productos.updateOne({ _id: product.id }, { $set: { ...product } });
 
     if (res) {
       return res;
@@ -39,7 +39,7 @@ class Products {
   };
 
   async deleteProduct(id) {
-    const deletedItem = await Product.deleteOne({ _id: id });
+    const deletedItem = await productos.deleteOne({ _id: id });
 
     if (deletedItem) {
       return deletedItem;
