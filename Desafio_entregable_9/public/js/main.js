@@ -9,7 +9,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     const product = {
         title: form[0].value,
-        price:form[1].value,
+        price: form[1].value,
         thumbnail: form[2].value,
     }
     socket.emit('update', product);
@@ -38,56 +38,30 @@ function makeHtmlTable(products) {
 
 //----------------------------------------------------------//
 
-socket.on('messages', function (data) {
-    console.log(data);
-});
-
-function render(data) {
-    var html = data.map(function (elem, index) {
-        return (
-            `<div>
-            <strong>${elem.author}</strong>:
-            <em>${elem.text}</em> </div>`
-
-        )
-    }).join(" ");
-    document.getElementById('messages').innerHTML = html;
-}
-socket.on('messages', function (data) { render(data); });
-
-function addMessage(e) {
-    var message = {
-        author: document.getElementById('username').value,
-        text: document.getElementById('texto').value
-    };
-    socket.emit('new-message', message);
-    return false;
-}
-
 //----------------------------------------------------------//
 
-socket.on('messages', async function(data) { 
-    const schemaAuthor = new normalizr.schema.Entity('author',{},{idAttribute: 'authorEmail'});
-  
-    const schemaMssg = new normalizr.schema.Entity('post', {
+socket.on('messages', async function (data) {
+    const schemaAuthor = new normalizr.schema.Entity('author', {}, { idAttribute: 'authorEmail' });
+
+    const schemaMsg = new normalizr.schema.Entity('post', {
         author: schemaAuthor
-    },{idAttribute: '_id'});
-  
+    }, { idAttribute: '_id' });
+
     const schemaMssgs = new normalizr.schema.Entity('posts', {
-    mensajes: [schemaMssg]
-    },{idAttribute: 'id'});
-  
+        mensajes: [schemaMsg]
+    }, { idAttribute: 'id' });
+
     const msgsDenormalize = normalizr.denormalize(data.result, schemaMssgs, data.entities);
     console.log(msgsDenormalize);
     render(msgsDenormalize)
 });
 
 function render(data) {
-    var html = data.map(function (elem, index) {
+    var html = data.mensajes.map(function (elem, index) {
         return (`
             <div>
-                <b style="color:blue;">${elem.author}</b> 
-                [<span style="color:brown;">${elem.fyh}</span>] : 
+                <b style="color:blue;">${elem.author.authorEmail}</b> 
+                [<span style="color:brown;">${elem.author.fyh}</span>] : 
                 <i style="color:green;">${elem.text}</i>
             </div>
         `)
@@ -101,7 +75,10 @@ const button = document.getElementById('enviar')
 
 function addMessage(e) {
     var message = {
-        author: userMessage.value,
+        author: {
+            authorEmail: userMessage.value,
+            fyh: new Date(),
+        },
         text: centerText.value
     };
     socket.emit('new-message', message);
