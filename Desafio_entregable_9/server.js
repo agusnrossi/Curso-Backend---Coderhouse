@@ -22,6 +22,14 @@ app.use(express.static('public'))
 app.use('/api/', router);
 app.use(viewRouter);
 
+app.set('view engine', 'hbs')
+app.set('views', './views');
+
+
+
+app.get('/', (req, res) => {
+    res.sendFile('index');
+})
 
 //-------------------------------------------------------//
 mongoose.connect('mongodb://0.0.0.0:27017/ecommerce', { useNewUrlParser: true, useUnifiedTopology: true })

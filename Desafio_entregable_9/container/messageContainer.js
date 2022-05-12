@@ -1,5 +1,5 @@
 const { normalize, denormalize, schema } = require('normalizr');
-const {mensajes} = require('../models/message');
+const mensajes = require('../models/message');
 
 class Messages {
     constructor() {
