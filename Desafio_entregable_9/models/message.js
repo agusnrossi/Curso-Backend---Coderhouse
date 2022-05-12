@@ -8,5 +8,5 @@ const Schema = mongoose.Schema({
     text: {type: String, required: true}
 });
 
-
-module.exports = mongoose.model('Message', Schema);
+const mensajes = mongoose.model('mensajes', Schema);
+module.exports = mensajes;
