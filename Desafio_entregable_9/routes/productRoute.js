@@ -8,10 +8,10 @@ const product = new Product();
 
 viewRouter.get('/productos/vista', async (req, res) => {
     const listOfProducts = await product.getProducts();
-    res.render("viewProduct.hbs", {
+    res.render("index", {
         productsExist: Array.isArray(listOfProducts),
         products: listOfProducts
-    })
+    });
 });
 
 viewRouter.get('/productos/vista-test', async (req, res) => {
@@ -27,7 +27,7 @@ viewRouter.get('/productos/vista-test', async (req, res) => {
     }
     console.log(fakerProducts.length)
     await product.getProducts();
-    res.render("viewProduct.hbs", {
+    res.render("index", {
         productsExist: fakerProducts.length > 0,
         products: fakerProducts
     })
