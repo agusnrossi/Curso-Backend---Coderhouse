@@ -3,6 +3,7 @@ const router = express.Router();
 const { viewRouter } = require('./routes/productRoute');
 const { Server: HttpServer } = require('http');
 const { Server: IOServer } = require('socket.io');
+const hbs = require('express-handlebars');
 const Products = require('./container/productContainer');
 const Messages = require('./container/messageContainer');
 const messages = new Messages();
@@ -22,14 +23,9 @@ app.use(express.static('public'))
 app.use('/api/', router);
 app.use(viewRouter);
 
-app.set('view engine', 'hbs')
-app.set('views', './views');
+app.engine('hbs', hbs({defaultLayout: 'main', extname: '.hbs'}));
+app.set('view engine', 'hbs');
 
-
-
-app.get('/', (req, res) => {
-    res.sendFile('index');
-})
 
 //-------------------------------------------------------//
 mongoose.connect('mongodb://0.0.0.0:27017/ecommerce', { useNewUrlParser: true, useUnifiedTopology: true })
