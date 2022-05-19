@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const router = express.Router();
 const { viewRouter } = require('./routes/productRoute');
 const { Server: HttpServer } = require('http');
@@ -22,10 +23,24 @@ app.set("view engine", "hbs");
 app.set("views", "./views");
 //-------------------------------------------//
 
+const engine = require('express-handlebars')
 
+app.engine('hbs',engine({
+    extname:'hbs',
+    defaultLayout:'main',
+    layoutsDir:path.resolve(__dirname,"./views/layouts"),
+    partialDir:path.resolve(__dirname, "./views/partials")
+}))
+
+app.set('view engine', 'hbs')
+const viewPath=path.join(__dirname,"./views");
+app.set('views', viewPath);
+
+
+//--------------------------------------------//
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(express.static('public'))
+app.use(express.static(viewPath))
 app.use('/api/', router);
 app.use(viewRouter);
 app.use(session({
@@ -33,6 +48,8 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }))
+
+//---------------Middleware-------------------//
 
 app.use((err, req, res, next) => {
     console.error(err.message);
@@ -45,35 +62,34 @@ mongoose.connect('mongodb://0.0.0.0:27017/ecommerce', { useNewUrlParser: true, u
     .catch(err => console.log(err))
 //-------------------------------------------------------------------//
 
-const auth = (req, res, next) => {
-    if (req.session.userName) {
-        return next();
-    } else {
-        return res.sendFile(`${__dirname}/public/login.html`);
-    }
-};
 
-app.get('/login',auth, (req, res) => {
+//----------------Login-------------------//
+app.get('/', (req,res)=>{
+
+    const sessionName = req.session.name
     req.session.cookie.maxAge = 60000;
-    res.sendFile(`${__dirname}/public/index.html`)
-})
-
-app.post('/login', (req, res) => {
-    req.session.userName = req.body.userName;
-    res.send({userName: req.body.userName});
-})
-
-app.get('/username', (req, res) => {
-    res.send({userName: req.session.userName});
-})
-
-app.get('/logout', (req, res) => {
-    req.session.destroy(err => {
-        if (!err) res.send('Logout ok!')
-        else res.send({ status: 'Logout ERROR', body: err })
+    res.render('index',{
+        sessionName
     })
-}) 
+})
 
+app.post('/', (req,res)=>{
+    req.session.name = req.body.name;   
+    req.session.save(()=>{
+    res.redirect('/')
+    })
+})
+
+app.get('/logout', (req,res)=>{
+    const logoutName = req.session.name
+    req.session.destroy(err=>{
+        if(err){
+            res.json({error:'olvidar', body:err})
+        }else{
+            res.render('index',{logoutName})
+        }
+    })
+});
 
 
 //-------------------------------------------------------//

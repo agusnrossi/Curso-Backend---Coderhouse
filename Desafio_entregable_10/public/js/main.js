@@ -1,47 +1,6 @@
-
-let greeting = document.querySelector('#greeting');
-let logout = document.querySelector('#logout');
-let logoutMsg = document.querySelector('#logoutMsg');
-let logoutContainer = document.querySelector('#logoutContainer');
-let mainContainer = document.querySelector('#mainContainer');
-
-
 //----------------------------------------------------------//
 
 const socket = io.connect();
-
-socket.on('data', async (data) => {
-
-    const res = await fetch('/username',
-        {
-            method:'GET'
-        }
-    )
-
-    const response = await res.json();
-    console.log(response.userName);
-
-    greeting.innerHTML = `Bienvenido ${response.userName}`;
-    logoutMsg.innerHTML = `Hasta Luego ${response.userName}`;
-
-    
-    render(data);
-})
-
-logout.addEventListener('click', async() => { 
-    await fetch('/logout', {
-        method:'GET'
-    })
-
-    logoutContainer.classList.remove('d-none');
-    mainContainer.classList.add('d-none');
-
-    setTimeout(() => {
-        window.location.reload();
-    }, 2000);
-})
-//----------------------------------------------------------//
-
 
 const form = document.querySelector('#formAddProduct');
 form.addEventListener('submit', e => {
@@ -62,7 +21,7 @@ socket.on('productos', products => {
 });
 
 function makeHtmlTable(products) {
-    return fetch('views/viewProduct.hbs')
+    return fetch('./partial/viewProduct.hbs')
         .then(res => res.text())
         .then(temp => {
             const template = Handlebars.compile(temp);
@@ -70,12 +29,6 @@ function makeHtmlTable(products) {
             return html
         })
 }
-
-
-
-//----------------------------------------------------------//
-
-//----------------------------------------------------------//
 
 //----------------------------------------------------------//
 

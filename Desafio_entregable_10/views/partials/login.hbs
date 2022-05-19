@@ -1,0 +1,19 @@
+<div class="jumbotron ">
+{{#if sessionName}}
+    <div class="jumbotron   alert alert-success d-flex justify-content-between">
+        <div>
+            <h3>Bienvenido {{sessionName}}</h3>
+        </div>
+        <form action="/logout" method="get">
+            <input type="submit" class="btn mt-5 btn-warning" value="Cerrar Sesion">
+        </form>
+    </div>
+{{/if}}
+{{#unless sessionName}}
+    <form action="/" method="POST">
+        <h3>Ingrese su nombre:</h3>
+        <input type="text" name="name" class="form-control">
+        <input type="submit" value=" Ingresar " class="btn mt-5 btn-success">
+    </form>
+{{/unless}}
+</div>
