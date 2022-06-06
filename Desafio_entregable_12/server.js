@@ -45,7 +45,7 @@ app.use(session({
 }))
 
 //----------------- configurar motor handlebars------------------------------------//
-const  engine  = require('express-handlebars')
+const  {engine} = require('express-handlebars')
 
 app.engine('hbs', engine({
     extname: 'hbs',
@@ -102,6 +102,20 @@ app.get('/register-error', (req, res) => {
 });
 app.get('/login-error', (req, res) => {
     res.render('index', { titleError: "login-error" , message: "USER ERROR LOGIN" });
+});
+
+
+app.get('/info', (req,res)=>{
+    const info = {
+        inputArguments: JSON.stringify(args),
+        platformName:   process.platform,
+        versionNode:    process.version,
+        rss:            process.memoryUsage().rss,
+        path:           process.argv[0],
+        processId:      process.pid,
+        projectFolder:  `${process.cwd()}`
+    }
+    res.render('index', {info})
 });
 
 
