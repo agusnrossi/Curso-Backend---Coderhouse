@@ -10,39 +10,55 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const mongoStore = require('connect-mongo')
 const apiRoutes = require('./router/api/apiRoutes');
-const minimist = require('minimist')
 const cluster = require('cluster')
-const os = require('os');
+//const minimist = require('minimist');
+
 const { MongoGridFSChunkError } = require('mongodb');
-const os =require('os   ')
+const os =require('os')
 
-
+const PORT= process.argv[3] ;
+const MODE = process.argv[2] || 'FORK';
+console.log(PORT)
 
 //-----------------------------------------------------//
+
+
+/*
 const args = minimist(process.argv.slice(2), {
     default:{
         PORT: 8080,
         MODE: 'FORK'
     },
     alias:{
-        p:'PORT',
+        p: 'PORT',
         m:'MODE'
     }
 })
 
-if(args.MODE =='CLUSTER'){
-    if(cluster.isPrimary){
+*/
+
+if(MODE === 'CLUSTER' && cluster.isPrimary){
+    
         console.log(`Proceso principal, N°: ${process.pid}`)
+    
         const CPUS_NUM = os.cpus().length;
+        console.log(`Número de CPUs: ${os.cpus().length}`)
         for(let i = 0; i< CPUS_NUM;i++){
             cluster.fork()
         }
-    }else{
+        cluster.on('exit',(worker)=>{
+            console.log(`Proceso ${worker.process.pid} terminado  ${new Date().toLocaleString()}`)
+            cluster.fork()
+        }
+        )
+    }
+    else{
+
+   
         console.log(`Proceso secundario, N°: ${process.pid}`)
         allServer();
-    }
-}else{
-    allServer();
+
+
 }
 
 function allServer(){
@@ -50,7 +66,7 @@ function allServer(){
 const app = express();
 const { Server: HttpServer } = require('http');
 const { Server: IOServer } = require('socket.io');
-const PORT = process.argv[2] ;
+
 const httpServer = new HttpServer(app);
 const io = new IOServer(httpServer);
 
@@ -62,7 +78,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.static('views'));
 //app.use('/api/', router);
 app.use(session({
-    secret: 'secreto',
+    secret: process.env.COOKIE_SECRET,
     resave: false,
     saveUninitialized: false,
     cookie: { maxAge: 60000 },
@@ -81,7 +97,7 @@ app.engine('hbs', engine({
 
 app.set('view engine', 'hbs')
 const viewPath = path.join(__dirname, "./views");
-console.log(viewPath);
+
 app.set('views', viewPath);
 
 
@@ -130,9 +146,11 @@ app.get('/login-error', (req, res) => {
 });
 
 
+
 app.get('/info', (req,res)=>{
     const info = {
-        inputArguments: JSON.stringify(args),
+        inputArguments: `${MODE} ${PORT}}`,
+        cpuNumber: os.cpus().length,
         platformName:   process.platform,
         versionNode:    process.version,
         rss:            process.memoryUsage().rss,
@@ -187,15 +205,14 @@ io.on('connection', async (socket) => {
 
 //----------------------------------------------------------//
 
-
-
-const server = httpServer.listen(args.PORT, () => {
-    console.log(`Server is running on port ${args.PORT}`)
+const server = httpServer.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 })
 
 server.on('error', (err) => {
     console.log(err)
 })
+
 }
 
 //------------------------------------------------------------------//

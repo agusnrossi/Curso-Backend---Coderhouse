@@ -3,7 +3,7 @@ const args = require('..')
 
 
 const getRandom = (res, cant) => {
-    if (args.MODO == 'CLUSTER') {
+    if (args.MODE == 'CLUSTER') {
         const { count } = fork('./controllers/random.cjs');
         let num;
 

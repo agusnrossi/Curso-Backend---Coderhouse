@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/agusnrossi/Curso-Backend---Coderhouse#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "express": "^4.18.0",
     "minimist": "^1.2.6",
     "nodemon": "^2.0.15"
