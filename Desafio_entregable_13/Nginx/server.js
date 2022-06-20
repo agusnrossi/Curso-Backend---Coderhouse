@@ -12,30 +12,30 @@ const mongoStore = require('connect-mongo')
 const apiRoutes = require('./router/api/apiRoutes');
 const cluster = require('cluster')
 //const minimist = require('minimist');
-
 const { MongoGridFSChunkError } = require('mongodb');
+
 const os =require('os')
 
-const PORT= process.argv[3] ;
 const MODE = process.argv[2] || 'FORK';
-console.log(PORT)
+const PORT = process.env.PORT || 8081
+;
 
 //-----------------------------------------------------//
 
 
-/*
-const args = minimist(process.argv.slice(2), {
+
+/* const args = minimist(process.argv.slice(2), {
     default:{
-        PORT: 8080,
-        MODE: 'FORK'
+        port: 8080,
+        mode: 'FORK'
     },
     alias:{
-        p: 'PORT',
-        m:'MODE'
+        p: 'port',
+        m:'mode'
     }
-})
+}) */
 
-*/
+
 
 if(MODE === 'CLUSTER' && cluster.isPrimary){
     
@@ -149,7 +149,7 @@ app.get('/login-error', (req, res) => {
 
 app.get('/info', (req,res)=>{
     const info = {
-        inputArguments: `${MODE} ${PORT}}`,
+        inputArguments: MODE,
         cpuNumber: os.cpus().length,
         platformName:   process.platform,
         versionNode:    process.version,
