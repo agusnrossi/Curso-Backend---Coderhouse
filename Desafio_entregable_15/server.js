@@ -16,7 +16,7 @@ const minimist = require('minimist');
 const cluster = require('cluster');
 const os = require('os')
 
-
+const PORT = process.env.PORT || 8080
 //-----------------------------------------------------//
 const args = minimist(process.argv.slice(2), {
     default: {
@@ -187,8 +187,8 @@ if (args.MODE === 'CLUSTER' && cluster.isPrimary) {
 
 
 
-    const server = httpServer.listen(args.PORT, () => {
-        console.log(`Server is running on port ${args.PORT}`)
+    const server = httpServer.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`)
     })
 
     server.on('error', (err) => {
