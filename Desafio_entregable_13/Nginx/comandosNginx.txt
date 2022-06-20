@@ -1,0 +1,9 @@
+Instancias de servidores 8080 y 8081
+pm2 start server.js --name “cluster-server” -- --port 8080 -i max
+pm2 start server.js --name “fork-server” -- --port 8081 --mode "FORK"
+
+/api/randoms servers
+pm2 start server.js --name “fork-server2” -- --port 8082 --mode "FORK"
+pm2 start server.js --name “fork-server3” -- -p 8083 --mode "FORK"
+pm2 start server.js --name “fork-server4” -- -p 8084 --mode "FORK"
+pm2 start server.js --name “fork-server5” -- -p 8085 --mode "FORK"
