@@ -1,6 +1,6 @@
 
 const express = require('express');
-const authRoutes = require('./auth/authRouter');
+const authRoutes = require('./auth/auth.Routes');
 const randomRoutes = require('./random/random');
 const router = express.Router();
 

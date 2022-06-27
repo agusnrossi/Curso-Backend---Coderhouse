@@ -14,15 +14,16 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
-    {{#if titleErrror}}
-        {{>error-session }}
+   {{#if titleError}}
+        {{>error-session}}
     {{/if}}
 
     {{#if logoutName}}
         {{>logout}}
-    {{/if}}
+    {{/if }}
+    
     {{#if sessionName}}
-        {{>login-session }}
+        {{>index}}
          <div class="jumbotron">
             <h1>Ingrese Producto</h1>
             <br>
@@ -50,6 +51,7 @@
            {{>chat}}
         </div>
     <script src="../main.js"></script>
+ 
     {{/if}}
     {{#unless sessionName}}
         {{>login }}

@@ -1,6 +1,5 @@
 require('dotenv').config();
 const express = require('express');
-const router = express.Router();
 const path = require('path');
 const { Server: HttpServer } = require('http');
 const { Server: IOServer } = require('socket.io');
@@ -10,9 +9,10 @@ const messages = new Messages();
 const products = new Products();
 const mongoose = require('mongoose');
 const session = require('express-session');
-const mongoStore = require('connect-mongo')
-const apiRoutes = require('./router/api/apiRoutes');
+const MongoStore = require('connect-mongo')
+const apiRoutes = require('./router/index');
 const minimist = require('minimist');
+const passport=require('./middlewares/passport')
 
 
 //-----------------------------------------------------//
@@ -31,18 +31,24 @@ const args = minimist(process.argv.slice(2), {
 })
 //-----------------------------------------------------//
 
-app.use('/api', apiRoutes);
+
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static('views'));
-//app.use('/api/', router);
+
 app.use(session({
     secret: 'secreto',
     resave: false,
     saveUninitialized: false,
     cookie: { maxAge: 60000 },
-   // store: mongoStore.create({mongoUrl:'//0.0.0.0:27017/ecommerce'})
+    store: MongoStore.create({
+        mongoUrl: 'mongodb+srv://agusnrossi:Tottenham@cluster0.yrwhz.mongodb.net/ecommerce?retryWrites=true&w=majority',
+        mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true },
+        ttl: 600
+    })
 }))
+app.use(passport.initialize());
+app.use(passport.session());
 
 //----------------- configurar motor handlebars------------------------------------//
 const  {engine} = require('express-handlebars')
@@ -60,13 +66,13 @@ console.log(viewPath);
 app.set('views', viewPath);
 
 
-
+app.use(apiRoutes);
 
 
 
 //-----------------------------------------------------//
 
-mongoose.connect('mongodb://0.0.0.0:27017/ecommerce', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/ecommerce', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('conexion exitosa!'))
     .catch(err => console.log(err))
 
@@ -74,54 +80,9 @@ mongoose.connect('mongodb://0.0.0.0:27017/ecommerce', { useNewUrlParser: true, u
 
 
 
-app.get('/', (req, res) => {
-
-    const sessionName = req.user
-
-    res.render('index', {
-        sessionName
-    })
-})
-
-app.post('/', (req, res) => {
-    req.session.userEmail = req.body.userEmail;
-    req.session.save(() => {
-        res.redirect('/')
-    })
-})
-app.get('/logout', (req, res) => {
-    const logoutName = req.session.user
-    req.logout();
-    console.log('logout');
-    res.render('index', { logoutName })
-}
-)
-
-app.get('/register-error', (req, res) => {
-    res.render('index', { titleError: "register-error" , message: "USER ERROR SIGNUP" });
-});
-app.get('/login-error', (req, res) => {
-    res.render('index', { titleError: "login-error" , message: "USER ERROR LOGIN" });
-});
-
-
-app.get('/info', (req,res)=>{
-    const info = {
-        inputArguments: JSON.stringify(args),
-        platformName:   process.platform,
-        versionNode:    process.version,
-        rss:            process.memoryUsage().rss,
-        path:           process.argv[0],
-        processId:      process.pid,
-        projectFolder:  `${process.cwd()}`
-    }
-    res.render('index', {info})
-});
-
-
 io.on('connection', async (socket) => {
 
-    const arrayMsg = await messages.getMessage();
+    //const arrayMsg = await messages.getMessage();
 
     console.log('Client connected...');
     socket.emit('product', await products.getProducts());
@@ -165,7 +126,7 @@ io.on('connection', async (socket) => {
 
 
 const server = httpServer.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`)
+    console.log('Server is running on port ', PORT)
 })
 
 server.on('error', (err) => {

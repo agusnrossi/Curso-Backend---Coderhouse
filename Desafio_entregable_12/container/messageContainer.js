@@ -1,53 +1,39 @@
-const { normalize, denormalize, schema } = require('normalizr');
-const mensajes = require('../models/message');
+const  ContenedorMongoDB = require('./mongodbContainer');
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema;
 
-class Messages {
-    constructor() {
+const collection = 'messages'
+
+const messageSchema = new mongoose.Schema({
+    author: { type: Schema.Types.ObjectId, ref: "users" },
+    text: { type: String, required: true },
+    createdAt: { type: String, required: true },
+    updatedAt: { type: String, required: true }
+})
+
+class MessageDaoMongoDB extends ContenedorMongoDB{
+    constructor(){
+        super(collection, messageSchema)
     }
 
-
-    async getMessage() {
+    async getAll(filter={}){
         try {
-            return this.normalizeMessages(await mensajes.find())
-
-        } catch (err) {
-            throw err
+            const documents = await this.model.find(filter, {__v:0}).populate('author')
+            return documents
+        } catch (error) {
+            throw new Error(error);
         }
-
     }
 
-    async addMessage(message) {
-
+    async createMessage(resourceItem){
         try {
-            console.log(message)
-            return mensajes.create(message)
-        } catch (err) {
-            throw err
+            const newItem = new this.model(resourceItem)
+            await newItem.save();
+            return newItem._id;
+        } catch (error) {
+            throw new Error(error);
         }
     }
-
- normalizeMessages(mensajes) {
-
-    const schemaAuthor = new schema.Entity('author', {}, { idAttribute: 'authorEmail' });
-
-    const schemaMsg = new schema.Entity('post', {
-        author: schemaAuthor
-    }, { idAttribute: '_id' });
-
-    const schemaMssgs = new schema.Entity('posts', {
-        mensajes: [schemaMsg]
-    }, { idAttribute: 'id' });
-
-    let mssgsId = {
-        id: 'mensajes',
-        mensajes: mensajes.map(mensaje => ({ ...mensaje._doc, _id: JSON.stringify(mensaje._id) }))
-    }
-
-    let mssgsIdNor = normalize(mssgsId, schemaMssgs);
-
-    return mssgsIdNor;
-
 }
 
-}
-module.exports = Messages
+module.exports = MessageDaoMongoDB;

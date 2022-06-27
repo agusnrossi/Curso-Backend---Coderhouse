@@ -17,7 +17,33 @@
         <input type="submit" value="Confirmar" class="btn btn-success">
     </form>
     <div class="d-flex flex-row-reverse">
-        <button class="btn btn-primary " id="toggleBtn">Registrarse</button>
+        <button class="btn btn-primary " id="toggleBtn">Registrarse!</button>
     </div>
 </div>
-<script src="../login.js"></script>
+<script>
+    let choice = true;
+    const loginForm = document.getElementById('loginForm')
+    const registerForm = document.getElementById('registerForm')
+    const toggleBtn = document.getElementById('toggleBtn')
+
+    loginForm.style.display = 'block'
+    registerForm.style.display = 'none'
+
+    toggleBtn.addEventListener('click', toggleBox)
+
+    function toggleBox(){
+        if(choice){
+            loginForm.style.display = 'none'
+            registerForm.style.display = 'block'
+            toggleBtn.textContent = 'Loguearse'
+            choice = false
+        }else{
+            loginForm.style.display = 'block'
+            registerForm.style.display = 'none'
+            toggleBtn.textContent = 'Registrase'
+            choice = true
+        }
+    }
+    
+</script>
+</div>

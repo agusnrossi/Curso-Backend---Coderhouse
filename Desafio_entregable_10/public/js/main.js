@@ -49,11 +49,11 @@ socket.on('messages', async function (data) {
 });
 
 function render(data) {
-    var html = data.mensajes.map(function (elem, index) {
+    var html = data.map(function (elem, index) {
         return (`
             <div>
-                <b style="color:blue;">${elem.author.authorEmail}</b> 
-                [<span style="color:brown;">${elem.author.fyh}</span>] : 
+                <b style="color:blue;">${elem.author}</b> 
+                [<span style="color:brown;">${elem.fyh}</span>] : 
                 <i style="color:green;">${elem.text}</i>
             </div>
         `)

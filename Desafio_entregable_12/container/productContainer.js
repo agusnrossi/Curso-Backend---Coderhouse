@@ -1,53 +1,33 @@
-const productos = require('../models/products');
+const  ContenedorMongoDB = require('./mongodbContainer');
+const mongoose = require('mongoose')
 
-class Products {
+const collection = 'products'
 
-  constructor(products) {
+const productSchema = new mongoose.Schema({
+    id:{type:Number, unique:true, required:true},
+    code: {type:String, unique:true, required:true},
+    name: {type:String, required:true},
+    price: {type:Number, required:true, min:0},
+    image: {type:String},
+    desc: {type:String},
+    stock: {type:Number, required:true, min:0},
+    timestamp: {type:Date, required:true, min:Date.now()}
+})
 
-    this.products = products || []
-
-
-  }
-
-
-  async getProducts(id) {
-    this.products = await productos.find();
-    if (id) {
-      const product = await productos.findById(id);
-      if (product.length === 0) {
-        return { error: 'producto no encontrado.' }
+class ProductsDaoMongoDB extends ContenedorMongoDB{
+    constructor(){
+        super(collection, productSchema)
+    }
+    async createItem(resourceItem) {
+        try {
+          const newItem = new this.model(resourceItem);
+          await newItem.save();
+          return newItem;
+        }
+        catch (err) {
+          throw new Error(error);
+        }
       }
-      return product;
-    }
-    if (this.products.length === 0) {
-      return { error: 'no hay productos cargados.' }
-    }
-    return this.products;
-  };
-
-  async addProduct(product) {
-    return await productos.create(product);
-  };
-
-  async updateProduct(product) {
-    const res = await productos.updateOne({ _id: product.id }, { $set: { ...product } });
-
-    if (res) {
-      return res;
-    }
-    return { error: 'producto no encontrado.' }
-  };
-
-  async deleteProduct(id) {
-    const deletedItem = await productos.deleteOne({ _id: id });
-
-    if (deletedItem) {
-      return deletedItem;
-    }
-    return { error: 'producto no encontrado.' }
-  }
 }
 
-
-//-------------------------------------------------------------------------------------//
-module.exports = Products;
+module.exports = ProductsDaoMongoDB;

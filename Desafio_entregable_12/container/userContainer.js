@@ -1,48 +1,53 @@
-const  mongodbContainer = require('./mongodbContainer');
-const usuarios = require('../models/user');
+const  ContenedorMongoDB = require('./mongodbContainer');
+
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema
 
 
+const collection = 'users'
 
-const Usuarios = new mongoose.Schema({
-    email:{type:String, required:true, unique:true},
-    password:{type:String, required:true},
-    message:[{type:mongoose.Schema.Types.ObjectId, ref:'message'}]
+const userSchema = new mongoose.Schema({
+    email: { type: String, required: true, unique: true},
+    password: { type: String, required: true },
+    messages: [{ type: Schema.Types.ObjectId, ref: "messages" }]
 })
 
-
-const  collection='users';
-
-class User extends mongodbContainer{
-    constructor() {
-      
-       if(!User.instance){
-            super(collection,Usuarios)
-            return this
+class UserDaoMongoDB extends ContenedorMongoDB{
+    constructor(){
+        if (!UserDaoMongoDB.instance) {
+          super(collection, userSchema);
+          UserDaoMongoDB.instance = this;
+          return this;
         }
-        else{
-            return User.instance
-        }
-    } 
-    async createUser(item){
-        try{
-            return await usuarios.create(item)
-        }catch(err){
-            throw err
+        else {
+          return UserDaoMongoDB.instance;
         }
     }
 
-    async getByEmail(email){
-        const errorMessage = 'No se encontro el usuario o contraseña';
-        try{
-            return await usuarios.findOne({email: email},{__v:0})
+    async createUser(userItem) {
+        try {
+          const user = new this.model(userItem);
+          await user.save();
+          return user;
         }
-        catch(errorMessage){
-            throw errorMessage
+        catch(error) {
+          throw new Error(error);
         }
-    } 
+      };
+
+      async getByEmail(email) {
+        try {
+            const document = await this.model.findOne({ email }, { __v: 0 });
+            if (!document) {
+                const errorMessage = `Wrong username or password`;
+                throw new Error(errorMessage);
+              } else return document;
+              
+        } catch (error) {
+            throw new Error(error);
+        }
+      }
 }
 
-
-module.exports = User;
+module.exports = UserDaoMongoDB
 
