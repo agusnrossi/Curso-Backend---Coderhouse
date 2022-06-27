@@ -57,10 +57,14 @@ socket.on('messages', async function (data) {
 function render(data) {
     var html = data.mensajes.map(function (elem, index) {
         return (`
-            <div>
-                <b style="color:blue;">${elem.author.authorEmail}</b> 
-                [<span style="color:brown;">${elem.author.fyh}</span>] : 
-                <i style="color:green;">${elem.text}</i>
+            <div class="message">
+                <div class="message-author">
+                    <span>${elem.author.authorEmail}</span>
+                    <span>${elem.author.fyh}</span>
+                </div>
+                <div class="message-text">
+                    <p>${elem.text}</p>
+                </div>
             </div>
         `)
     }).join(" ");

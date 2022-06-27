@@ -18,29 +18,36 @@ class User extends mongodbContainer{
       
        if(!User.instance){
             super(collection,Usuarios)
+            User.instance = this;
             return this
         }
         else{
             return User.instance
         }
     } 
-    async createUser(item){
-        try{
-            return await usuarios.create(item)
-        }catch(err){
-            throw err
-        }
-    }
+    async createUser(userItem){
+        try {
+            const user = new this.model(userItem);
+            await user.save();
+            return user;
+          }
+          catch(error) {
+            throw new Error(error);
+          }
+        };
 
     async getByEmail(email){
-        const errorMessage = 'No se encontro el usuario o contraseña';
-        try{
-            return await usuarios.findOne({email: email},{__v:0})
+        try {
+            const document = await this.model.findOne({ email }, { __v: 0 });
+            if (!document) {
+                const errorMessage = `Wrong username or password`;
+                throw new Error(errorMessage);
+              } else return document;
+              
+        } catch (error) {
+            throw new Error(error);
         }
-        catch(errorMessage){
-            throw errorMessage
-        }
-    } 
+      }  
 }
 
 

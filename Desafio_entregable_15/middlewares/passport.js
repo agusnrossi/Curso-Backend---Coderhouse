@@ -9,11 +9,10 @@ const salt = () => bcrypt.genSaltSync(10);
 const createHash = (password) => bcrypt.hashSync(password, salt());
 const isValidPassword = (user, password) => bcrypt.compareSync(password, user.password);
 
-passport.use("login", new LocalStrategy(
-    (req, email, password, done) => {
+passport.use("login", new LocalStrategy(async (username, password, done) => {
         console.log('iniciando sesion');
         try{
-            const user=  useR.getByEmail(email);
+            const user= await useR.getByEmail(username);
             if(!isValidPassword(user, password)){
                 return done(null, false, {message: "Contraseña incorrecta"});
             }
@@ -48,11 +47,13 @@ passport.serializeUser((user, done) => {
     done(null, user._id);
 });
 
-passport.deserializeUser(async (id, done) => {
+
+  passport.deserializeUser(async (id, done) => {
     console.log('Inside deserializer')
-    const user = await useR.getByEmail(id);
+    const user = await useR.getById(id);
     done(null, user);
   })
+  
   
 
 module.exports = passport;
