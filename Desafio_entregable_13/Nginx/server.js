@@ -16,26 +16,11 @@ const { MongoGridFSChunkError } = require('mongodb');
 
 const os =require('os')
 
-const MODE = process.argv[2] || 'FORK';
-const PORT = process.env.PORT || 8081
-;
 
 //-----------------------------------------------------//
 
-
-
-/* const args = minimist(process.argv.slice(2), {
-    default:{
-        port: 8080,
-        mode: 'FORK'
-    },
-    alias:{
-        p: 'port',
-        m:'mode'
-    }
-}) */
-
-
+const MODE = process.argv[2] || 'FORK';
+const PORT = parseInt(process.env.PORT) || 8080;
 
 if(MODE === 'CLUSTER' && cluster.isPrimary){
     
