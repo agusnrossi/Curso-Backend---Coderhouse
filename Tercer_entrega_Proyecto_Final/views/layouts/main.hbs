@@ -12,6 +12,37 @@
     <title>Document</title>
 </head>
 <body>
+       {{#if titleError}}
+        {{>error-session}}
+    {{/if}}
+
+    {{#if logoutName}}
+        {{>logout}}
+    {{/if }}
     
+    {{#if sessionName}}
+        {{>index}}
+        
+        <div id="divPrincipal" class="jumbotron container mt-3">
+
+            <div id="userTab">
+                {{>userInfo}}
+            </div>
+            <hr>
+            <div id="cartTab">
+                {{>cartInfo}}
+            </div>
+             <hr>
+            <div id="productsTab">
+                {{>products}}
+            </div>
+
+        </div>
+        <script src="../main.js"></script>
+    {{/if}}
+    
+    {{#unless sessionName}}
+        {{>login}}
+    {{/unless}}
 </body>
 </html>

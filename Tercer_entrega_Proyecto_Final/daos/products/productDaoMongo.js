@@ -19,10 +19,10 @@ const productSchema = new mongoose.Schema({
 
 
 
-class prductDaoMongo extends mongoContainer {
+class productDaoMongo extends mongoContainer {
     constructor() {
         super(collections,productSchema);
     }
 }
 
-module.exports = prductDaoMongo;
+module.exports = productDaoMongo;

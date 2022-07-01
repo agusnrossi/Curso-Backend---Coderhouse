@@ -1,4 +1,3 @@
-const { credential } = require('firebase-admin');
 const admin = require('firebase-admin');
 const {getFirestore } = require('firebase-admin/firestore')
 const {DB_CONFIG} = require('../config/config');
@@ -6,11 +5,11 @@ const {DB_CONFIG} = require('../config/config');
 
 admin.initializeApp({
     credential: admin.credential.cert(DB_CONFIG.firebase.credential),
-    databaseURL: DB_CONFIG.firebase.databaseURL
+    
 });
 
-
 class FirebaseContainer {
+
 
     constructor(coll) {
         const db = getFirestore();

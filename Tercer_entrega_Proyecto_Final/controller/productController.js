@@ -1,4 +1,4 @@
-const {productsDAO}=require('../daos/indexDao')
+const {productsDAO}=require('../daos/userDao')
 const product = new productsDAO();
 
 const  getAllProducts = async (req, res) => {

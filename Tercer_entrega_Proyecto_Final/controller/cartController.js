@@ -1,4 +1,4 @@
-const {cartsDAO} = require('../daos/indexDao');
+const {cartsDAO} = require('../daos/userDao');
 const product=require('../controller/productController');
 const cart = new cartsDAO();
 
