@@ -1,32 +1,32 @@
-const nodemailer =require('nodemailer');
-const adminConfig=require('./config/config.js');
-const handlebars=require('handlebars');
-const path=require('path');
-const fs=require('fs');
-const adminConfig=require('./config/config.js');
-const {loggerConsole, loggerInfo, loggerError} = require('./logger/index');
+const nodemailer = require('nodemailer');
+const adminConfig = require('./config/config.js');
+const handlebars = require('handlebars');
+const path = require('path');
+const fs = require('fs');
+const adminConfig = require('./config/config.js');
+const { loggerConsole, loggerInfo, loggerError } = require('./logger/index');
 
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     port: 587,
-    auth:{
+    auth: {
         user:
-        process.env.EMAIL_USER,
+            'proyectofinalcoder@gmail.com',
         pass:
-        process.env.EMAIL_PASS
+            'orzbtldznmpkulan'
 
     }
 })
 
 
-async function newRegister(newUser){
-    try{
-        const mailPayload={
+async function newRegister(newUser) {
+    try {
+        const mailPayload = {
             from: "Proyecto Final- Rossi Agustin",
             to: adminConfig.ADMIN_EMAIL,
             subject: "Nuevo usuario registrado",
-            html:`
+            html: `
             <html>
             <body>
                 <div class="card" style="width: 18rem;">
@@ -43,45 +43,45 @@ async function newRegister(newUser){
             </body>
         </html>`,
         }
-        const mailInfo=await transporter.sendMail(mailPayload);
+        const mailInfo = await transporter.sendMail(mailPayload);
         loggerInfo.info(`Mail enviado a ${adminConfig.ADMIN_EMAIL}`)
-    }catch(error){
+    } catch (error) {
         loggerError.error(error)
 
     }
 }
 
 
-async function newPurchase(user,cart){
-    
-        try {
-            const emailTemplateSource = fs.readFileSync(path.join(__dirname, "/cartList.hbs"), "utf8")
-            const template = handlebars.compile(emailTemplateSource)
-            const htmlToSend = template({cart})
-    
-            const subjectString = `Nuevo pedido de ${user.name}. Email: ${user.email}`
-            const mailPayload = {
-                from: "Proyecto Final- Rossi Agustin",
-                to: adminConfig.ADMIN_EMAIL,
-                subject: subjectString,
-                html:htmlToSend,
-            };
-            const mailInfo = await transporter.sendMail(mailPayload);
-            const wppInfo = await adminWppMessage(subjectString)
-            const customerSms = await smsClient(user.phone, `Hola ${user.name}! Su pedido ha sido recibido y está ahora en proceso. Gracias!`)
-            return true
-        }
-     catch (error) {
-            loggerError.error(error)
-            
-        }
+async function newPurchase(user, cart) {
+
+    try {
+        const emailTemplateSource = fs.readFileSync(path.join(__dirname, "/cartList.hbs"), "utf8")
+        const template = handlebars.compile(emailTemplateSource)
+        const htmlToSend = template({ cart })
+
+        const subjectString = `Nuevo pedido de ${user.name}. Email: ${user.email}`
+        const mailPayload = {
+            from: "Proyecto Final- Rossi Agustin",
+            to: process.env.ADMIN_EMAIL,
+            subject: subjectString,
+            html: htmlToSend,
+        };
+        const mailInfo = await transporter.sendMail(mailPayload);
+        const wppInfo = await adminWppMessage(subjectString)
+        const customerSms = await smsClient(user.phone, `Hola ${user.name}! Su pedido ha sido recibido y está ahora en proceso. Gracias!`)
+        return true
+    }
+    catch (error) {
+        loggerError.error(error)
+
+    }
 }
 
 
 
 
 
-module.exports={
+module.exports = {
     newRegister,
     newPurchase
 }
