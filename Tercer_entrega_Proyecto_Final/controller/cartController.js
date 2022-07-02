@@ -1,58 +1,69 @@
-const {cartsDAO} = require('../daos/userDao');
-const product=require('../controller/productController');
-const cart = new cartsDAO();
+const {cartsDAO} = require('../models/indexDaos');
+const {product}=require('./productController');
+const userDaoMongo=require('../models/daos/User/userDao')
+const mongoose=require('mongoose')
+const {newPurchase} =require('../utils/nodemailer')
+const {loggerInfo,loggerError} = require('../logger/index')
 
-const postNewCart= async (req,res)=>{
+const cartApi = new cartsDAO();
+const userApi= new userDaoMongo()
+
+
+const postNewCart= async (userId,res)=>{
     try{
-        const totalCart=await cart.getCart();
+        const totalCart=await cartApi.getCart();
         const newCart = {
             id: totalCart.length + 1,
             timestamp: Date.now(),
             products: []
         }
-        cart.saveCart(newCart);;
-    return res.json({result: newCart});
+       const newMongoCart= await cartApi.save(newCart)
+       return newMongoCart._id
 }catch(err){
-    return res.json({error: err});
+    loggerError.error(error)
+    return res.json({Error: `No se pudo realizar esta acción`, error})
 }
 }
 
 
 const deleteCart= async (req,res)=>{
     try{
-    const {cartId} = req.params
-    const deletedCart = await cart.removeFromCart(cartId)
-    if (deletedCart.error) return res.status(404).send(deletedCart.error);
-    return res.json({Eliminado:deletedCart});
+        const cartId = req.params.cartId
+        cartApi.deleteById(cartId)
+        return res.json({response:`Su carro id:${cartId} fué eliminado`})
 }catch(err){
+    loggerError.error(error)
     return res.json({error: err});
 }
 }
 
 const getCartProducts= async (req,res)=>{
     try{
-    const {cartId} = req.params.cartId
-    const theCart = await cart.getCart(cartId)
-    if (theCart.error) return res.status(404).send(theCart.error);
-    return res.json({Productos: theCart.Productos});
+        const cartId = req.params.cartId
+        const theCart = await cartApi.getById(cartId)
+      
+        return res.json(theCart[0].products)
 }
 catch(err){
-    return res.json({error: err});
+    loggerError,error(error)
+    return res.json({Error: `No se pudo realizar esta acción`, error})
 }
 }
 
 const addToCart= async (req,res)=>{
     try{
-    const cartId = req.params.cartId
-    const productId = req.body.productId
-    const allProduct = await product.getProduct()
-    const theProduct = allProduct.find(product => product.id === +productId)
-    const theCart = await cart.getById(cartId)
-    theCart[0].products.push(theProduct)
-    await cartApi.updateById(cartId, theCart[0])
+        const cartId = mongoose.Types.ObjectId(req.params.cartId);
+        const productId = mongoose.Types.ObjectId(req.params.productId);
+        const theProduct = await productsApi.getById(productId)
+        
+        const theCart = await cartApi.getById(cartId);
+        theCart.products.push(theProduct);
+    
+        await cartApi.updateById(cartId, theCart);
     return res.json({response:'Se agregó el producto al carro.'})
 }
 catch(err){
+    loggerError.error(error)
     return res.json({error: err});
 }
 }
@@ -68,11 +79,35 @@ const deleteProductCart= async (req,res)=>{
 }
 }
 
+const purchaseCart = async(req,res)=>{
+    try {
+        const cartId = mongoose.Types.ObjectId(req.params.cartId);
+        const theCart = await cartApi.getById(cartId);
+        const userId = mongoose.Types.ObjectId(theCart.owner);
+        const theOwner = await userApi.getById(userId);
+
+        const newCart = {...theCart._doc, products:[]}
+
+        await newPurchase(theOwner, theCart)
+
+        await cartApi.updateById(cartId, newCart)
+
+        return res.json({response: 'Pedido realizado. Compra en Proceso'})
+    
+    } catch (error) {
+        loggerError.error(error);
+        return res.json({Error: `No se pudo realizar esta acción`, error})
+    } 
+}
+
+
+
 module.exports={
-    cart,
+   
     postNewCart,
     deleteCart,
     getCartProducts,
     addToCart,
-    deleteProductCart
+    deleteProductCart,
+    purchaseCart
 }

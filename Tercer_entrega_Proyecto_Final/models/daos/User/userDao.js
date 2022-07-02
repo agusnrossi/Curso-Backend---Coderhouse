@@ -1,6 +1,6 @@
-const MongoContainer=require('../container/mongoContainer');
+const MongoContainer=require('../../../container/mongoContainer');
 const mongoose=require('mongoose');
-const {errorLogger}=require('../../logger/index');
+const {errorLogger}=require('../../../logger/index');
 
 
 const collection='users'

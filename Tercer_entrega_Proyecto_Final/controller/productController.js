@@ -1,5 +1,5 @@
-const {productsDAO}=require('../daos/userDao')
-const product = new productsDAO();
+const {ProductsDao}=require('../models/indexDaos.js')
+const product = new ProductsDao();
 
 const  getAllProducts = async (req, res) => {
     const products = await product.getProducts();

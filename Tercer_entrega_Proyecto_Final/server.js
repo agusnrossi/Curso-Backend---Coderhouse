@@ -83,6 +83,15 @@ app.set('view engine','hbs');
 //-----Set up the server to use the router-----//
 app.use(apiRouter);
 
+
+//-----Connect to database---------//
+
+
+mongoose.connect(dbConfig.DB_CONFIG.mongodb)
+.then(() => console.log('conexion exitosa!'))
+.catch(err => console.log(err))
+
+
 //-----Run the server------------------------//
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
