@@ -5,11 +5,11 @@ const cartRouter=require('./cartRoute/cartRouter');
 const productRouter=require('./productRoute/productRoute');
 const fileRouter=require('./fileRoute/file.routes');
 const authRouter=require('./auth/auth.routes');
-const { loggerInfo, loggerError,loggerWarning } = require('../../logger/index');
+const { loggerInfo, loggerError,loggerWarning } = require('../logger/index');
 
 
-const cartDao = require('../daos/Cart/cartDao');
-const productDao = require('../daos/Products/productDao');
+const cartDao = require('../models/daos/Cart/cartDao');
+const productDao = require('../models/daos/Products/productDao');
 
 
 
@@ -50,7 +50,7 @@ router.get('/logout',async (req,user)=>{
     res.render('index',{logoutName});
 })
 
-router,get('/login',async (req,res)=>{
+router.get('/login',async (req,res)=>{
     res.render('login');
 })  
 

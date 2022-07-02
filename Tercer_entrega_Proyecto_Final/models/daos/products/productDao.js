@@ -1,7 +1,7 @@
 const path = require('path')
 
 const dataPath= path.resolve(__dirname,"./products.txt")
-const Container= require('../../container/container');
+const Container= require('../../../container/container');
 const container=new Container(dataPath);
 
 class Product{

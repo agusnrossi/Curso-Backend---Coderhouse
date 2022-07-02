@@ -1,10 +1,9 @@
 const nodemailer = require('nodemailer');
-const adminConfig = require('./config/config.js');
+const adminConfig = require('../config/config.js')
 const handlebars = require('handlebars');
 const path = require('path');
 const fs = require('fs');
-const adminConfig = require('./config/config.js');
-const { loggerConsole, loggerInfo, loggerError } = require('./logger/index');
+const { loggerConsole, loggerInfo, loggerError } = require('../logger/index');
 
 
 const transporter = nodemailer.createTransport({

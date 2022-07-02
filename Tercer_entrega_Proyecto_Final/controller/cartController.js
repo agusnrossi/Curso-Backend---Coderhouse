@@ -1,11 +1,11 @@
-const {cartsDAO} = require('../models/indexDaos');
+const {CartsDao} = require('../models/indexDaos');
 const {product}=require('./productController');
 const userDaoMongo=require('../models/daos/User/userDao')
 const mongoose=require('mongoose')
 const {newPurchase} =require('../utils/nodemailer')
 const {loggerInfo,loggerError} = require('../logger/index')
 
-const cartApi = new cartsDAO();
+const cartApi = new CartsDao();
 const userApi= new userDaoMongo()
 
 

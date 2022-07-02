@@ -9,6 +9,7 @@ const {engine}=require('express-handlebars');
 const {loggerConsole, loggerInfo, loggerError} = require('./logger/index');
 const dbConfig=require('./config/config.js');
 const apiRouter=require('./router/routes')
+const passport=require ('passport')
 
 const minimist =require('minimist')
 const cluster=require('cluster')
@@ -93,16 +94,10 @@ mongoose.connect(dbConfig.DB_CONFIG.mongodb)
 
 
 //-----Run the server------------------------//
-app.listen(PORT,()=>{
+const server=app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
+});
+server.on('error',(err)=>{
+    console.log(err);
 })
-.then(()=>{
-    loggerInfo.info(`Server is running on port ${PORT}`);
-    loggerConsole.info(`Server is running on port ${PORT}`);
-}
-)
-.catch(error=>{
-    loggerError.error(`Server is running on port ${PORT}`);
-})
-
 }
