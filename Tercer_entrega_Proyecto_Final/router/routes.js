@@ -26,22 +26,20 @@ const cartsDao=new cartDao();
 const productsDao=new productDao();
 
 
-router.get('/',async (req,res)=>{
-    try{
-        const sessionName=req.user;
-        const allProducts= await productsDao.getProducts();
+router.get('/', async (req,res)=>{
+    try {
+        const sessionName = req.user
+        const allProducts = await productsDao.getProducts()
         if(sessionName){
-            const sessionCart=await cartsDao.getById(sessionName.cart)
-            return res.render('index',{allProducts,sessionName,sessionCart});
+            const sessionCart = await cartsDao.getById(sessionName.cart)
+            return res.render('index', {sessionName, sessionCart, allProducts})
         }
-
-         
-    }
-    catch(error){
+            res.render('index', {sessionName, allProducts})
+        
+    } catch (error) {
         loggerError.error(new Error(error));
     }
 })
-
 
 router.get('/logout',async (req,user)=>{
     const logoutName=req.user;
@@ -51,7 +49,7 @@ router.get('/logout',async (req,user)=>{
 })
 
 router.get('/login',async (req,res)=>{
-    res.render('login');
+    res.render('login.html');
 })  
 
 router.get('/register-error', (req, res) => {

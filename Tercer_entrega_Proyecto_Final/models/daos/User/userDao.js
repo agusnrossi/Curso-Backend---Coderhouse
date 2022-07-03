@@ -1,6 +1,6 @@
 const MongoContainer=require('../../../container/mongoContainer');
 const mongoose=require('mongoose');
-const {errorLogger}=require('../../../logger/index');
+const {loggerError}=require('../../../logger/index');
 
 
 const collection='users'
@@ -37,7 +37,7 @@ class userDaoMongo extends MongoContainer{
           return user;
         }
         catch(error) {
-          errorLogger.error(error);
+          loggerError.error(error);
         }
       };
 
@@ -50,7 +50,7 @@ class userDaoMongo extends MongoContainer{
               } else return document;
               
         } catch (error) {
-          errorLogger.error(error);
+          loggerError.error(error);
         }
       }
 

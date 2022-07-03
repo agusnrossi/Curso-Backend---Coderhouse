@@ -1,0 +1,219 @@
+[2022-07-02T18:30:22.883] [ERROR] error - ReferenceError: req is not defined
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:34:24)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at done (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\storage\disk.js:43:9)
+[2022-07-02T18:39:26.624] [ERROR] error - ReferenceError: req is not defined
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:35:24)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at done (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\storage\disk.js:43:9)
+[2022-07-02T20:56:32.421] [ERROR] error - Error: TypeError: productDao.getProducts is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-02T20:56:49.538] [ERROR] error - Error: TypeError: productDao.getProduct is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-02T20:58:45.306] [ERROR] error - Error: TypeError: productDao.getAll is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-02T20:59:09.717] [ERROR] error - Error: TypeError: productsDao.getAll is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-02T21:14:59.207] [ERROR] error - ReferenceError: req is not defined
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:35:24)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at done (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\storage\disk.js:43:9)
+[2022-07-02T21:20:00.884] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'error')
+    at userDaoMongo.createUser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\models\daos\User\userDao.js:40:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:25)
+[2022-07-02T21:20:12.913] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:47:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-02T21:20:19.916] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:47:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-02T21:20:46.473] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'error')
+    at userDaoMongo.createUser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\models\daos\User\userDao.js:40:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:25)
+[2022-07-02T21:22:54.001] [ERROR] error - ReferenceError: loggerError is not defined
+    at userDaoMongo.createUser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\models\daos\User\userDao.js:40:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:25)
+[2022-07-02T21:24:04.858] [ERROR] error - Error: users validation failed: age: Path `age` is required., birthDate: Path `birthDate` is required., lastName: Path `lastName` is required.
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    age: ValidatorError: Path `age` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'age',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    birthDate: ValidatorError: Path `birthDate` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'birthDate',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    lastName: ValidatorError: Path `lastName` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'lastName',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-07-02T21:24:04.881] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:51:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-02T21:26:10.976] [ERROR] error - Error: users validation failed: age: Path `age` is required., birthDate: Path `birthDate` is required., lastName: Path `lastName` is required.
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    age: ValidatorError: Path `age` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'age',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    birthDate: ValidatorError: Path `birthDate` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'birthDate',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    lastName: ValidatorError: Path `lastName` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'lastName',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-07-02T21:26:10.998] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:51:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

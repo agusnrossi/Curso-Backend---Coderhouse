@@ -26,8 +26,9 @@ module.exports={
         PERS: PERS || 'mongo',
 
     DB_CONFIG:{
-        mongodb:{
-           uri:MONGODB_URI
+        mongodb: {
+        connectTo: (database) => 
+        `mongodb+srv://${DB_URI}.knuiz.mongodb.net/${database}?retryWrites=true&w=majority`
                 },
         firebase:{
             credential: firebaseConfig,

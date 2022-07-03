@@ -1,0 +1,10 @@
+[2022-07-02T17:38:41.720] [WARN] warningFile - GET /index.html
+[2022-07-02T17:38:42.112] [WARN] warningFile - GET /favicon.ico
+[2022-07-02T17:38:56.842] [WARN] warningFile - GET /*
+[2022-07-02T18:00:32.682] [WARN] warningFile - GET /index.html
+[2022-07-02T18:25:03.214] [WARN] warningFile - GET /*
+[2022-07-02T18:25:03.721] [WARN] warningFile - GET /favicon.ico
+[2022-07-02T18:29:56.274] [WARN] warningFile - GET /+
+[2022-07-02T18:39:03.401] [WARN] warningFile - GET /*
+[2022-07-02T20:55:53.393] [WARN] warningFile - GET /l
+[2022-07-02T21:14:36.584] [WARN] warningFile - GET /favicon.ico

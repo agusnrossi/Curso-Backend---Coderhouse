@@ -5,7 +5,6 @@ const session=require('express-session');
 const MongoStore=require('connect-mongo')
 const mongoose=require('mongoose');
 const path=require('path');
-const {engine}=require('express-handlebars');
 const {loggerConsole, loggerInfo, loggerError} = require('./logger/index');
 const dbConfig=require('./config/config.js');
 const apiRouter=require('./router/routes')
@@ -62,7 +61,7 @@ app.use(session({
     saveUninitialized: false,
     cookie:{maxAge:24 * 60 * 60 * 1000},
     store: MongoStore.create({
-        mongoUrl: 'mongodb+srv://agusnrossi:Tottenham@cluster0.yrwhz.mongodb.net/ecommerce?retryWrites=true&w=majority',
+        mongoUrl:'mongodb+srv://agusnrossi:Tottenham@cluster0.yrwhz.mongodb.net/ecommerce?retryWrites=true&w=majority', 
         mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true },
 })}));
 app.use(passport.initialize());
@@ -72,13 +71,18 @@ app.use(passport.session());
 
 //-----Set up the server to use handlebars-----//
 
-app.engine('hbs',engine({
-    extname:'hbs',
-    layoutsDir:path.resolve(__dirname+'/views/layouts'),
-    partialsDir:path.resolve(__dirname+'/views/partials')
-}));
-app.set('views','./views');
-app.set('view engine','hbs');
+const {engine}=require('express-handlebars');
+app.engine('hbs', engine({
+    extname: 'hbs',
+    defaultLayout: 'main',
+    layoutsDir: path.resolve(__dirname, "./views/layouts"),
+    partialDir: path.resolve(__dirname, "./views/partials")
+}))
+
+app.set('view engine', 'hbs')
+const viewPath = path.join(__dirname, "./views");
+
+app.set('views', viewPath);
 
 
 //-----Set up the server to use the router-----//
@@ -88,7 +92,7 @@ app.use(apiRouter);
 //-----Connect to database---------//
 
 
-mongoose.connect(dbConfig.DB_CONFIG.mongodb)
+mongoose.connect('mongodb+srv://agusnrossi:Tottenham@cluster0.yrwhz.mongodb.net/ecommerce?retryWrites=true&w=majority')
 .then(() => console.log('conexion exitosa!'))
 .catch(err => console.log(err))
 
