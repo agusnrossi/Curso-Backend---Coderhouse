@@ -1,28 +1,25 @@
-const twilio = require('twilio');
-const adminConfig = require('./config/config.js');
-const { loggerInfo, loggerError } = require('./logger/index');
-
+const twilio = require('twilio')
+const adminConfig = require('./dbConfig')
+const {infoLogger, errorLogger} = require('./logger/index')
 
 const ACCOUNT_ID = adminConfig.TWILIO_ID;
 const AUTH_TOKEN = adminConfig.TWILIO_TOKEN;
 const ADMIN_PHONE = adminConfig.ADMIN_PHONE;
 
-
-const twilioClient= twilio(ACCOUNT_ID, AUTH_TOKEN);
-
+const twilioClient = twilio(ACCOUNT_ID, AUTH_TOKEN);
 
 async function adminWppMessage(msg){
-    try{
+    try {
         const messagePayload = {
-            from: 'whatsapp:+14155238886',
+            from:'whatsapp:+14155238886',
             to: `whatsapp:${ADMIN_PHONE}`,
-            body: msg
-    }
-    const messageResponse = await twilioClient.messages.create(messagePayload)
-        loggerInfo.info(messageResponse)
+            body: msg,
+        }
+        const messageResponse = await twilioClient.messages.create(messagePayload)
+        infoLogger.info(messageResponse)
         
     } catch (error) {
-        loggerError.error(error)
+        errorLogger.error(error)
     }
 };
 
@@ -34,10 +31,10 @@ async function smsClient(phone, msg){
             body: msg,
         }
         const messageResponse = await twilioClient.messages.create(messagePayload)
-        loggerInfo.info(messageResponse)
+        infoLogger.info(messageResponse)
         
     } catch (error) {
-        loggerError.error(error)
+        errorLogger.error(error)
     }
 }
 

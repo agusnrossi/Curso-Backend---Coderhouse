@@ -1,0 +1,1024 @@
+[2022-07-02T18:30:22.883] [ERROR] error - ReferenceError: req is not defined
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:34:24)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at done (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\storage\disk.js:43:9)
+[2022-07-02T18:39:26.624] [ERROR] error - ReferenceError: req is not defined
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:35:24)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at done (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\storage\disk.js:43:9)
+[2022-07-02T20:56:32.421] [ERROR] error - Error: TypeError: productDao.getProducts is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-02T20:56:49.538] [ERROR] error - Error: TypeError: productDao.getProduct is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-02T20:58:45.306] [ERROR] error - Error: TypeError: productDao.getAll is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-02T20:59:09.717] [ERROR] error - Error: TypeError: productsDao.getAll is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-02T21:14:59.207] [ERROR] error - ReferenceError: req is not defined
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:35:24)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at done (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\multer\storage\disk.js:43:9)
+[2022-07-02T21:20:00.884] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'error')
+    at userDaoMongo.createUser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\models\daos\User\userDao.js:40:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:25)
+[2022-07-02T21:20:12.913] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:47:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-02T21:20:19.916] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:47:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-02T21:20:46.473] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'error')
+    at userDaoMongo.createUser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\models\daos\User\userDao.js:40:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:25)
+[2022-07-02T21:22:54.001] [ERROR] error - ReferenceError: loggerError is not defined
+    at userDaoMongo.createUser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\models\daos\User\userDao.js:40:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:25)
+[2022-07-02T21:24:04.858] [ERROR] error - Error: users validation failed: age: Path `age` is required., birthDate: Path `birthDate` is required., lastName: Path `lastName` is required.
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    age: ValidatorError: Path `age` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'age',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    birthDate: ValidatorError: Path `birthDate` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'birthDate',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    lastName: ValidatorError: Path `lastName` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'lastName',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-07-02T21:24:04.881] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:51:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-02T21:26:10.976] [ERROR] error - Error: users validation failed: age: Path `age` is required., birthDate: Path `birthDate` is required., lastName: Path `lastName` is required.
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    age: ValidatorError: Path `age` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'age',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    birthDate: ValidatorError: Path `birthDate` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'birthDate',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    lastName: ValidatorError: Path `lastName` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'lastName',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-07-02T21:26:10.998] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:51:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T17:54:50.375] [ERROR] error - Error: users validation failed: age: Path `age` is required., birthDate: Path `birthDate` is required., lastName: Path `lastName` is required.
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    age: ValidatorError: Path `age` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'age',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    birthDate: ValidatorError: Path `birthDate` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'birthDate',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    lastName: ValidatorError: Path `lastName` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'lastName',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-07-03T17:54:50.384] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:51:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T17:58:56.826] [ERROR] error - Error: users validation failed: age: Path `age` is required., birthDate: Path `birthDate` is required., lastName: Path `lastName` is required.
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    age: ValidatorError: Path `age` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'age',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    birthDate: ValidatorError: Path `birthDate` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'birthDate',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    lastName: ValidatorError: Path `lastName` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'lastName',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-07-03T17:58:56.837] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:51:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T18:01:13.308] [ERROR] error - Error: users validation failed: age: Path `age` is required., birthDate: Path `birthDate` is required.
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    age: ValidatorError: Path `age` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'age',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    birthDate: ValidatorError: Path `birthDate` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'birthDate',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-07-03T18:01:13.315] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:51:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T18:03:24.928] [ERROR] error - Error: users validation failed: age: Path `age` is required.
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    age: ValidatorError: Path `age` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'age',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-07-03T18:03:24.937] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:51:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T18:13:37.258] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.users index: email_1 dup key: { email: "agusrossi021287@gmail.com" }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'agusrossi021287@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T18:13:37.269] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T18:15:02.727] [ERROR] error - ReferenceError: error is not defined
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:23:23)
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:57)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T18:17:44.553] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.users index: email_1 dup key: { email: "agusrossi021287@hotmail.com" }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'agusrossi021287@hotmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T18:17:44.565] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T18:18:15.745] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:46:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-03T18:19:41.572] [ERROR] error - TypeError: cartApi.getCart is not a function
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:14:39)
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:57)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T18:19:41.577] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:16)
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:57)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T18:29:39.196] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.users index: email_1 dup key: { email: "agusrossi021287@dexmail.com" }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'agusrossi021287@dexmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T18:29:39.203] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T18:30:04.743] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:46:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-03T18:30:22.101] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:46:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-03T18:31:26.864] [ERROR] error - Error: carts validation failed: id: Path `id` is required.
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    id: ValidatorError: Path `id` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'id',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'carts validation failed'
+}
+[2022-07-03T18:31:26.870] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:51)
+[2022-07-03T18:38:21.871] [ERROR] error - Error: carts validation failed: id: Path `id` is required.
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    id: ValidatorError: Path `id` is required.
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'id',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'carts validation failed'
+}
+[2022-07-03T18:38:21.878] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:51)
+[2022-07-03T18:46:08.555] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.users index: email_1 dup key: { email: "agusrossi021287@mail.com" }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'agusrossi021287@mail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T18:46:08.566] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T18:47:12.473] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_id')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:21:29)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:51)
+[2022-07-03T18:47:12.475] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:51)
+[2022-07-03T18:50:18.824] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.carts index: id_1 dup key: { id: null }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { id: 1 },
+  keyValue: { id: null },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T18:50:18.831] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:51)
+[2022-07-03T18:53:03.722] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.carts index: id_1 dup key: { id: null }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { id: 1 },
+  keyValue: { id: null },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T18:53:03.733] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:51)
+[2022-07-03T20:10:11.108] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:46:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-03T20:34:00.747] [ERROR] error - Error: carts validation failed: timestamp: Path `timestamp` (Sun Jul 03 2022 20:34:00 GMT-0300 (hora estándar de Argentina)) is before minimum allowed value (Date.now()).
+    at ValidationError.inspect (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\layouts.js:64:57)
+    at app (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\appenders\file.js:82:23)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    timestamp: ValidatorError: Path `timestamp` (Sun Jul 03 2022 20:34:00 GMT-0300 (hora estándar de Argentina)) is before minimum allowed value (Date.now()).
+        at validate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1330:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\schematype.js:1314:7)
+        at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\lib\document.js:2762:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'min',
+      path: 'timestamp',
+      value: 2022-07-03T23:34:00.744Z,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'carts validation failed'
+}
+[2022-07-03T20:34:00.755] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:51)
+[2022-07-03T20:42:44.993] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.carts index: id_1 dup key: { id: null }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { id: 1 },
+  keyValue: { id: null },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T20:42:44.999] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:51)
+[2022-07-03T20:44:03.737] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:46:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-03T21:07:59.965] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.users index: email_1 dup key: { email: "agusrossi021287@gmail.com" }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'agusrossi021287@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T21:07:59.972] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:41)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-03T21:08:30.421] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:46:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-03T21:16:25.140] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:46:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-03T21:17:10.431] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.carts index: id_1 dup key: { id: null }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { id: 1 },
+  keyValue: { id: null },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T21:17:10.438] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:51)
+[2022-07-03T21:18:24.176] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:46:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-03T21:45:37.006] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:46:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-03T21:46:22.492] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.carts index: id_1 dup key: { id: null }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { id: 1 },
+  keyValue: { id: null },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T21:46:22.499] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:51)
+[2022-07-03T21:52:07.466] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.carts index: id_1 dup key: { id: null }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { id: 1 },
+  keyValue: { id: null },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T21:52:07.476] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:49:55)
+[2022-07-03T23:33:14.499] [ERROR] error - Error: TypeError: productsDao.getProducts is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+[2022-07-03T23:33:55.799] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.carts index: id_1 dup key: { id: null }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { id: 1 },
+  keyValue: { id: null },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T23:33:55.808] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'json')
+    at postNewCart (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\controller\cartController.js:24:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:49:55)
+[2022-07-03T23:36:03.143] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.users index: email_1 dup key: { email: "agusrossi021287@gmail.com" }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection_pool.js:277:25
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\sdam\server.js:335:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:222:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'agusrossi021287@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-03T23:36:03.156] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:49:43)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T00:18:22.282] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.users index: email_1 dup key: { email: "agusrossi021287@gmail.com" }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'agusrossi021287@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-04T00:18:22.291] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:49:43)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T00:20:45.967] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'path')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:46:32)
+    at Strategy.authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport-local\lib\strategy.js:88:12)
+    at attempt (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:369:16)
+    at authenticate (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\passport\lib\middleware\authenticate.js:370:7)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+[2022-07-04T00:33:55.305] [ERROR] error - TypeError: usersDao.updateById is not a function
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:43)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T00:42:40.958] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.users index: email_1 dup key: { email: "agusrossi021287@gmail.com" }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'agusrossi021287@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-04T00:42:40.967] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:49:43)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T00:49:32.126] [ERROR] error - ReferenceError: infoLogger is not defined
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:51:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T00:51:54.615] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T00:51:57.477] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.users index: email_1 dup key: { email: "agusrossi021287@gmail.com" }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'agusrossi021287@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-04T00:51:57.485] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:49:43)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T01:09:59.246] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T01:10:01.673] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T01:10:13.766] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T01:10:14.976] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T01:10:16.608] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T10:05:21.343] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T10:06:42.641] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T10:09:37.040] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T10:09:38.014] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T10:28:49.965] [ERROR] error - Error: TypeError: cartsDao.getById is not a function
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\router\routes.js:40:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T11:52:23.184] [ERROR] error - MongoServerError: E11000 duplicate key error collection: ecommerce.users index: email_1 dup key: { email: "agusrossi021287@gmail.com" }
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'agusrossi021287@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-07-04T11:52:23.194] [ERROR] error - TypeError: Cannot read properties of undefined (reading '_doc')
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:49:43)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-04T11:54:26.030] [ERROR] error - TypeError: usersDao.update is not a function
+    at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:43)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

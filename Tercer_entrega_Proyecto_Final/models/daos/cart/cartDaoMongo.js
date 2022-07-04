@@ -1,19 +1,18 @@
-const mongoContainer = require('../../../container/mongoContainer');
-const mongoose = require('mongoose');
+const MongoContainer = require('../../container/mongoContainer')
+const mongoose = require('mongoose')
 
-const collections ='carts'
+const collection = 'carts'
 
 const cartSchema = new mongoose.Schema({
-    id:{type:Number,unique:true,required:true},
-    timestamp:{type:Date,default:Date.now},
-    prducts:[{type:Object,ref:'products'}],
+    owner: {type: Object, ref:'users'},
+    timestamp:{type:Date, min:Date.now()},
+    products: [{type: Object, ref:'products'}]
 })
 
-
-class cartDaoMongo extends mongoContainer {
-    constructor() {
-        super(collections,cartSchema);
+class CartDaoMongo extends MongoContainer{
+    constructor(){
+        super(collection, cartSchema)
     }
-}
+} 
 
-module.exports = cartDaoMongo;
+module.exports = CartDaoMongo
