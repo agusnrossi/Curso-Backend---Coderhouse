@@ -12,14 +12,14 @@ class Product{
         });
     }
 
-    getProducts(){
+    getAll(){
         return this.products;
     }
 
-    getProductById(id){
-        const product= this.products.find(product=>product.id===id);
-        return product;
-    }
+    getById(id){
+        const product = this.products.find(prod => prod.id === +id);
+        return product || { error: `el producto ${id} no fué encontrado!` };
+    };
 
     async updateById(newInfo, id){
         const newList = [...this.products]
@@ -31,8 +31,8 @@ class Product{
             timestamp: Date.now(),
             ...newInfo
         }; 
-        await contenedor.writeAllFile(newList)
-        this.products = (contenedor.data).then((res)=> {this.products = res})
+        await container.writeAllFile(newList)
+        this.products = (container.data).then((res)=> {this.products = res})
         return newList[index]
     };
   
@@ -46,20 +46,17 @@ class Product{
             timestamp: Date.now(),
             ...product
         };
-        contenedor.writeFile(newProduct)
+        container.writeFile(newProduct)
         return newProduct;
     };
     
-    async deleteProduct(id){
-        const newList = [...this.products]
+    deleteById(id){
         const index = this.products.findIndex(product => product.id === +id);
         if (index < 0) return { error: `No se encontró un Producto con el id: ${id}!`};
-        newList.splice(index, 1);
-        await contenedor.writeAllFile(newList)
-        this.products = (contenedor.data).then((res)=> {this.products = res})
+        const newList = this.products.splice(index, 1)
+        container.writeAllFile(newList)
         return newList
-    
-    }
+    };
 
   
 

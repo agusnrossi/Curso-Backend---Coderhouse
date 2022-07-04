@@ -1,11 +1,11 @@
 const mongoContainer = require('../../../container/mongoContainer');
-const mongoose = require('mongoose');
+const {mongoose} = require('mongoose');
 
 const collections ='carts'
 
 const cartSchema = new mongoose.Schema({
-    id:{type:Number,unique:true,required:true},
-    timestamp:{type:Date,default:Date.now},
+    owner: {type: Object, ref:'users'},
+    timestamp:{type:Date, min:Date.now()},
     prducts:[{type:Object,ref:'products'}],
 })
 

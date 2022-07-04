@@ -10,41 +10,55 @@ class Cart{
             this.carts=res
         });
     }
+
+    static idCount = 0;
+
     async newCart(){
 
         const newCart = {
-            id: this.carts.length + 1,
+            id: ++Cart.idCount,
             timestamp: Date.now(),
             products: []
         };
-        this.carts.push(newCart);
-        await container.writeAllFile(this.carts);
-        return newCart;
+        container.writeFile(newCart)
+        return {NewCart: `Tu nuevo Carro es el ${newCart.id}`}
     }
+    async clearDelete(idCart){
+        const carts = await this.carts
+        
+        const index = carts.findIndex(cart => cart.id ===+idCart)
+        if (index < 0) return { error: `No se encontró el Carrito con el id: ${idCart}!`};
+        const theCart = carts.find(cart => cart.id === +idCart)
+        theCart.products = []
+        
+        carts.splice(index, 1)
 
-    async addToCart(product){
-        const newList = [...this.carts]
-        const index = this.carts.findIndex(cart => cart.id === +product.cartId);
-        if (index < 0) return { error: `No se encontró un producto con el id: ${product.cartId}!`};
-        newList[index].products.push(product);
-        await container.writeAllFile(newList)
-        this.carts = (container.data).then((res)=> {this.carts = res})
-        return newList[index]
+        container.writeAllFile(carts)
+
+        return {success:`${theCart.id} fué eliminado.`}
     }
+    showItems(idCart){
+        const theCart = this.carts.find(cart => cart.id === +idCart)
 
-    async removeFromCart(idCart){
-        const newList = [...this.carts]
-        const index = this.carts.findIndex(cart => cart.id === +idCart);
-        if (index < 0) return { error: `No se encontró un producto con el id: ${idCart}!`};
-        newList.splice(index, 1);
-        await container.writeAllFile(newList)
-        this.carts = (container.data).then((res)=> {this.carts = res})
-        return newList
-
+        return {Productos: theCart.products}
     }
-    async getCart(){
-        const theCart = this.carts.find(cart => cart.id === +cart)
-            return {Productos: theCart.products}      
+    async saveItem(idCart, product){
+        const carts = await this.carts
+        const index = carts.findIndex(cart => cart.id === +idCart)
+        carts[index].products.push(product)
+        container.writeAllFile(carts)
+        return {message: `${product.name} a sido añadido al Cart`}
+    }
+    async deleteItem(idCart, idProduct){
+        const carts = await this.carts
+        const theCart = carts.find(cart => cart.id === +idCart)
+        const actualProducts = theCart.products
+        const index = actualProducts.findIndex(product => product.id === +idProduct);
+        if (index < 0) return { error: `No se encontró un Producto con el id: ${idProduct}!`};
+        const theProductName = actualProducts[index].name
+        actualProducts.splice(index, 1)
+        container.writeAllFile(carts)
+        return {Success: `El producto: ${theProductName} fué eliminado de la lista`} 
     }
 }
    

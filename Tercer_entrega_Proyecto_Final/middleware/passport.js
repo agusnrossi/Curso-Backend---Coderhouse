@@ -32,28 +32,26 @@ passport.use("login",new LocalStrategy( async(username,password,done)=>{
 
 passport.use("register",new LocalStrategy({passReqToCallback:true}, async(req,username,password,done)=>{
     try{
-            const bday=req.body.bday
-            const ageInYears=moment().diff(bday,'years');
+            const birthDayDate=req.body.bday
+            const ageInYears = moment().diff(new Date(birthDayDate), 'years');
 
             const userObject={
                 email:username,
                 password:createHash(password),
-                name:req.body.name,
-                lastName:req.body.lastName,
+                name:req.body.name,            
                 phone:req.body.phone,
                 bday:req.body.bday,
-                ageInYears:ageInYears,
+                age:ageInYears,
                 address:req.body.address,
                 image:req.file.path,
             }
-
-            const user= await usersDao.createUser(userObject);
-            const userWithCart={...user._doc,cart:await postNewCart(user._id)}
-            const reUser= await usersDao.updateById(user._id,userWithCart);
-            loggerInfo.info("registration successful");
-
+            const user = await usersDao.createUser(userObject);
+            const userWithCart = {...user._doc, cart: await postNewCart(user._id)}
+            const reUser = await usersDao.updateById(user._id, userWithCart)
+            infoLogger.info("User registration successful!");
+            
             await newRegister(userObject)
-            return done(null,user);
+            return done(null, user);
         }
         catch(error){
             loggerError.error(error);

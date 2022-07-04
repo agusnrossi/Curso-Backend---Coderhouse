@@ -1,4 +1,4 @@
-const FirebaseContainer= require('../../container/firebaseContainer');
+const FirebaseContainer= require('../../../container/firebaseContainer');
 
 class cartDaoFirebase extends FirebaseContainer {
     constructor() {

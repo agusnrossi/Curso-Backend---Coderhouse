@@ -1,41 +1,50 @@
 const {ProductsDao}=require('../models/indexDaos.js')
-const product = new ProductsDao();
+const productApi = new ProductsDao();
 
 const  getAllProducts = async (req, res) => {
-    const products = await product.getProducts();
-    res.send(products);
+    const allProducts = await productApi.getAll()
+    return res.json(allProducts)
 }
 
 const getProductById = async (req, res) => {
     const { productId } = req.params
-    const searchProduct = product.getById(productId)
-    return res.json({result: searchProduct });
+    const searchProduct = await  productApi.getById(productId)
+    return res.json( searchProduct);
 };
 
 const saveNewProduct = async (req, res) => {
-    const newProduct = product.saveProduct(req.body)
-    const productSaved = await product.saveProduct(newProduct);
-    return res.json({ result: productSaved });
-}
+    const idCount = await productApi.getAll()
+    const { name, desc, image, price, stock} = req.body;
+    if (!name || !desc || !image || !price || !stock ) return { error: 'Todos los campos son obligatorios!' };
+    const newProduct = { 
+        id: idCount.length +1,
+        code: idCount.length +1,
+        timestamp: Date.now(),
+        name, desc, image, price, stock
+    };
+    productApi.save(newProduct)
+    return res.json({response: `Se agregó el nuevo Producto: ${newProduct.id}`})
+};
 
 const updateProduct = (req,res)=>{
     const {productId} = req.params
-    const {name,desc,price,image} = req.body
-    const newProduct = {name,desc,price,image}
+    const {name,desc,price,image,stock} = req.body
+    const newProduct = {name,desc,price,image,stock}
 
-    if (!name || !desc || !image || !price ) return { error: 'Todos los campos son obligatorios!' };
-    const updatedProduct = product.updateById(newProduct, productId)
-    return res.json({Nuevo:updatedProduct.name})
+    if (!name || !desc || !image || !price || !stock) return res.json({ error: 'Todos los campos son obligatorios!' });
+
+    const updatedProduct = productApi.updateById(productId, newProduct)
+    return res.json({response: `Se actualizó el Producto: ${productId}`})
 }
 const deleteProduct = (req,res)=>{
     const {productId} = req.params
-    const deletedProduct = product.deleteById(productId)
+    const deletedProduct = productApi.deleteById(productId)
     if (deletedProduct.error) return res.status(404).send(deletedProduct.error);
   return res.json({Eliminado:deletedProduct});
 };
 
 module.exports = {
-    product,
+    productApi,
     getAllProducts,
     getProductById,
     saveNewProduct,
