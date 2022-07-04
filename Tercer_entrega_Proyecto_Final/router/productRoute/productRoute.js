@@ -1,24 +1,22 @@
 const express = require('express');
-const router=express.Router();
-const {adminChecker}=require('../../middleware/adminCheck');
+const router = express.Router();
 
-const {
-getAllProducts,
-getProductById,
-saveNewProduct,
-updateProduct,
-deleteProduct,
-}=require('../../controller/productController');
+
+const { getAllProducts,
+       getProductById,
+       saveNewProduct,
+       deleteProduct,
+        updateProduct } = require('../../controller/productController');
 
 router.use(express.json());
-router.use(express.urlencoded({extended:true}));
+router.use(express.urlencoded({ extended: true }));
 
-router.get('/',adminChecker,getAllProducts);
+router.get('/', getAllProducts);
 
-router.get('/:productId',adminChecker,getProductById);
-router.put('/:productId',adminChecker,updateProduct);
-router.post('/',adminChecker,saveNewProduct);
-router.delete('/:productId',adminChecker,deleteProduct);
+router.get('/:productId', getProductById);
+router.put('/:productId', updateProduct);
+router.post('/', saveNewProduct);
+router.delete('/:productId', deleteProduct);
 
 
-module.exports=router;
+module.exports = router;

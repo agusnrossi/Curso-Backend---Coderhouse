@@ -1,5 +1,5 @@
 const express = require('express');
-const passport = require('passport');
+const passport = require('../../middleware/passport');
 const multer = require('multer');
 
 const authRouter = express.Router();

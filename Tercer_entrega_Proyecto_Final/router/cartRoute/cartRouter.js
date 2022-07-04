@@ -1,24 +1,30 @@
 const express = require('express');
-const router=express.Router();
-const {adminChecker}=require('../../middleware/adminCheck');
 
 const {
     postNewCart,
     deleteCart,
     getCartProducts,
     addToCart,
-    deleteProductCart
+    deleteProductCart,
+    purchaseCart
 }=require('../../controller/cartController');
+
+const router=express.Router()
 
 router.use(express.json());
 router.use(express.urlencoded({extended:true}));
 
 
-router.post('/',adminChecker,postNewCart);
-router.get('/:cartId',adminChecker,getCartProducts);
-router.delete('/:cartId/products/:productosId',adminChecker,deleteProductCart);
-router.post('/:cartId/products/:productosId',adminChecker,addToCart);
-router.delete('/:cartId',adminChecker,deleteCart);
+router.get('/', (req,res)=>{
+    res.render('cart.html')
+})
+
+router.post('/',postNewCart);
+router.get('/:cartId',getCartProducts);
+router.delete('/:cartId/products/:productosId',deleteProductCart);
+router.post('/:cartId/products/:productosId',addToCart);
+router.delete('/:cartId',deleteCart);
+router.post('/:cartId', purchaseCart)
 
 
 

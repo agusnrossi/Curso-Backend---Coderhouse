@@ -1,48 +1,41 @@
-const mongoose=require('mongoose');
-const {DB_CONFIG}=require('../config/config');
+const {mongoose} = require('mongoose');
+
 
 class MongoContainer {
-    constructor(coll,schema) {
-        this.connect().then(() => {
-            console.log('connected to mongo')})
+    constructor(coll, schema) {
         this.model = mongoose.model(coll, schema);
     }
 
 
-    async connect() {
-        await mongoose.connect(DB_CONFIG.mongodb.uri)
-    }
-
     async getById(id) {
-        const document=await this.model.find({_id:id}),{__v,_id}=document[0];
-        return {__v,_id, ...document[0]}
+        const document = await this.model.findById(id, { __v: 0 }).lean();
+        return document
     }
 
     async getAll() {
-        const documents=await this.model.find({});
-        return documents.map(document=>({
-            _id:document._id,
-            ...document
-        }))
+        const documents = await this.model.find({}, { __v: 0 }).lean();
+        return documents
     }
 
     async save(obj) {
-        const document=new this.model(obj);
-        await document.save();
+        const document = new this.model(obj);
+        return await document.save();
     }
 
-    async update(id,obj) {
-        const updated=await this.model.updateOne({_id:id},{$set:{...obj}});
-        return updated;
+    async update(id, obj) {
+        const updatedDoc = await this.model.updateOne({ _id:id }, { $set:{...obj} })
+        if(!updatedDoc.acknowledged){
+            return {response:'No se encuentra el dato solicitado'}
+        }
+        return updatedDoc
     }
 
     async delete(id) {
-        const deleted=await this.model.deleteOne({_id:id});
+        const deleted = await this.model.deleteOne({ _id: id });
         return deleted;
     }
-        
+
 }
 
 module.exports = MongoContainer;
-    
-       
+

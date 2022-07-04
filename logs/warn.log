@@ -9,4 +9,7 @@
 [2022-07-02T20:55:53.393] [WARN] warningFile - GET /l
 [2022-07-02T21:14:36.584] [WARN] warningFile - GET /favicon.ico
 [2022-07-03T17:54:27.412] [WARN] warningFile - GET /favicon.ico
+<<<<<<< HEAD
 [2022-07-04T11:51:24.427] [WARN] warningFile - GET /favicon.ico
+=======
+>>>>>>> 8031afd8eff374b5f54386c1c8c5b71091384847

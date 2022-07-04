@@ -1,17 +1,16 @@
 const MongoContainer=require('../../../container/mongoContainer');
-const mongoose=require('mongoose');
-const {errorLogger}=require('../../../logger/index');
+const {mongoose}=require('mongoose');
+const {loggerError}=require('../../../logger/index');
 
 
 const collection='users'
 
 const userSchema=new mongoose.Schema({
-    email:{type:String,required:true,unique:true},
+  email: { type: String, required: true, unique: true},
     password:{type:String,required:true},
     name:{type:String,required:true},
-    lastName:{type:String,required:true},
     phone:{type:String,required:true},
-    birthDate:{type:Date,required:true},
+    bday:{type:Date,required:true},
     age:{type:Number,required:true},
     address:{type:String,required:true},
     image:{type:String,required:true},
@@ -37,7 +36,7 @@ class userDaoMongo extends MongoContainer{
           return user;
         }
         catch(error) {
-          errorLogger.error(error);
+          loggerError.error(error);
         }
       };
 

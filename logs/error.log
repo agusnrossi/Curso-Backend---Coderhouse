@@ -919,6 +919,7 @@
     at Layer.handle [as handle_request] (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\layer.js:95:5)
     at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:281:22
     at Function.process_params (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\express\lib\router\index.js:341:12)
+<<<<<<< HEAD
 [2022-07-04T00:33:55.305] [ERROR] error - TypeError: usersDao.updateById is not a function
     at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:43)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
@@ -1022,3 +1023,5 @@
     at Strategy._verify (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\middleware\passport.js:50:43)
     at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=======
+>>>>>>> 8031afd8eff374b5f54386c1c8c5b71091384847

@@ -2,10 +2,11 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
 const moment=require('moment');
-const {infoLogger,errorLogger}=require('../../logger/index');
-const userDao=require('../daos/User/userDao');
+const {newRegister}=require('../utils/nodemailer')
+const {loggerInfo, loggerError}=require('../logger/index');
+const userDao=require('../models/daos/User/userDao');
 const { postNewCart } = require('../controller/cartController');
-const userDao=new userDao();
+const usersDao=new userDao();
 
 
 const salt=()=> bcrypt.genSaltSync(10);
@@ -15,48 +16,46 @@ const isValidPassword=(user,password)=>bcrypt.compareSync(password,user.password
 
 passport.use("login",new LocalStrategy( async(username,password,done)=>{
     try{
-        const user= await userDao.getByEmail(username);
+        const user= await usersDao.getByEmail(username);
         if(!isValidPassword(user,password)){
-            errorLogger.error(`Wrong username or password`);
+            loggerError.error(`Wrong username or password`);
             return done(null,false,{message:"Wrong username or password"});
         }
         return done(null,user);
     }
     catch(error){
-        errorLogger.error(error);
+        loggerError.error(error);
         return done(null,false,{message:"Wrong username or password"});
     }
 }))
 
 
-passport.use("register",new LocalStrategy({passReqToCallback:true}, async(username,password,done)=>{
+passport.use("register",new LocalStrategy({passReqToCallback:true}, async(req,username,password,done)=>{
     try{
-            const bday=req.body.bday
-            const ageInYears=moment().diff(bday,'years');
+            const birthDayDate=req.body.bday
+            const ageInYears = moment().diff(new Date(birthDayDate), 'years');
 
             const userObject={
                 email:username,
                 password:createHash(password),
-                name:req.body.name,
-                lastName:req.body.lastName,
+                name:req.body.name,            
                 phone:req.body.phone,
                 bday:req.body.bday,
-                ageInYears:ageInYears,
+                age:ageInYears,
                 address:req.body.address,
-                Image:req.file.path,
+                image:req.file.path,
             }
-
-            const user= await userDao.createUser(userObject);
-            const userWithCart={...user._doc,cart:await postNewCart(user._id)}
-            const reUser= await userDao.updateById(user._id,userWithCart);
-            infoLogger.info("registration successful");
-
+            const user = await usersDao.createUser(userObject);
+            const userWithCart = {...user._doc, cart: await postNewCart(user._id)}
+            const reUser = await usersDao.updateById(user._id, userWithCart)
+            infoLogger.info("User registration successful!");
+            
             await newRegister(userObject)
-            return done(null,user);
+            return done(null, user);
         }
         catch(error){
-            errorLogger.error(error);
-            return done(null,false,{message:"Wrong username or password"});
+            loggerError.error(error);
+            return done(null,false);
         }
 }
 ))
@@ -68,9 +67,9 @@ passport.serializeUser((user,done)=>{
 
 
 passport.deserializeUser(async(id,done)=>{
-    const user= await userDao.getById(id);
+    const user= await usersDao.getById(id);
     done(null,user);
 })
 
 
-Module.exports=passport;
+module.exports=passport;
