@@ -1,7 +1,7 @@
-const Contenedor = require('../../contenedores/contenedorFileSystem.js')
+const Contenedor = require('../../container/container')
 const path = require('path')
 
-const dataPath= path.resolve(__dirname,"./data.txt")
+const dataPath= path.resolve(__dirname,"/data.txt")
 const contenedor = new Contenedor(dataPath)
 
 class ProductsApi{
