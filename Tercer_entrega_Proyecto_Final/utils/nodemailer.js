@@ -10,15 +10,15 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     port: 587,
     auth:{
-        user: 'atonomo.4s@gmail.com',
-        pass: 'fambykqbelsqvyta'
+        user:  process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
     }
 });
 
 async function newRegister(newUser){
     try {
         const mailPayload = {
-            from: 'Proyecto3 - Diaz Hector',
+            from: 'ProyectoFinal- Agustin Rossi',
             to: adminConfig.ADMIN_EMAIL,
             subject:`New Register!`,
             html:`
@@ -53,7 +53,7 @@ async function newPurchase(user,cart){
 
         const subjectString = `Nuevo pedido de ${user.name}. Email: ${user.email}`
         const mailPayload = {
-            from: 'Proyecto3 - Diaz Hector',
+            from: 'ProyectoFinal- Agustin Rossi',
             to: adminConfig.ADMIN_EMAIL,
             subject: subjectString,
             html:htmlToSend,
