@@ -1,20 +1,24 @@
-
 const express = require('express');
-const passport = require('../../../api/middlewares/passport');
-const authController = require('../../../api/middlewares/authController');
+const UserControllers = require('../../../controllers/user.controllers')
 
-const authRouter = express.Router();
+const authRouter = express.Router()
 
-authRouter.post('/register',
-  (passport.authenticate("register", {
-    failureRedirect: "/register-error",
-    successRedirect: "/"
-})));
+class UserRoutes {
+    constructor(){
+        this.controller = new UserControllers()
+    }
 
-authRouter.post('/login',
-  (passport.authenticate("login", {
-    failureRedirect: "/login-error",
-    successRedirect: "/"
-})));
+    initialize(){
+        authRouter.post('/register', this.controller.passportRegister);
 
-module.exports = authRouter;
+        authRouter.post('/login', this.controller.passportLogin);
+
+        authRouter.get('/register-error', this.controller.registerError);
+
+        authRouter.get('/login-error', this.controller.loginError);
+
+        return authRouter;
+    }
+}
+
+module.exports = new UserRoutes()

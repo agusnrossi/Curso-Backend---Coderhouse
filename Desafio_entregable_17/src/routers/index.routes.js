@@ -1,53 +1,26 @@
 const express = require('express');
-const apiRoutes = require('./api/api.routes');
-const router = express.Router();
+const authRoutes = require('./api/auth/auth.routes');
+const infoRoutes = require('./api/info/info.routes');
+const ProductsDao = require('../models/daos/products/products.mongo.dao')
 
-router.use('/api', apiRoutes);
+const productsDao = new ProductsDao()
+const router = express.Router()
 
-router.get('/', async (req, res) => {
+router.use('/auth', authRoutes.initialize());
+router.use('/info', infoRoutes);
+
+router.get('/', async (req,res)=>{
     const sessionName = req.user
-
-    res.render('index', { sessionName })
+    const products = await productsDao.getAll()
+    res.render('index', {products, sessionName})
 })
 
-/*
-router.post('/', (req, res) => {
-    req.session.userEmail = req.body.userEmail;
-    req.session.save(() => {
-        res.redirect('/')
-    })
-})
-*/
-router.get("/logout", (req, res) => {
-    req.logout(req.user, err => {
-      if(err) return next(err);
-      res.redirect("/");
-    });
-  });
+router.get('/logout', (req,res)=>{
+    const logoutName = req.user
+    req.logout();
+    console.log('User logued out!');
+    res.render('index',{logoutName})
 
-
-router.get('/register-error', (req, res) => {
-    res.render('index', { titleError: "register-error", message: "USER ERROR SIGNUP" });
-});
-router.get('/login-error', (req, res) => {
-    res.render('index', { titleError: "login-error", message: "USER ERROR LOGIN" });
 });
 
-
-router.get('/info', (req, res) => {
-
-    const info = {
-        inputArguments: MODO,
-        cpuNum: os.cpus().length,
-        platformName: process.platform,
-        versionNode: process.version,
-        rss: process.memoryUsage().rss,
-        path: process.argv[0],
-        processId: process.pid,
-        projectFolder: `${process.cwd()}`
-    }
-    res.render('index', { info })
-});
-
-
-module.exports = router;
+module.exports = router 
