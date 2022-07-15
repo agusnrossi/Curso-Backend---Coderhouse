@@ -1,6 +1,7 @@
 const mongodb = require('mongodb');
 const {errorLogger} = require('../../../utils/logger/index');
 const dbConfig = require('../../../../db/config/dbConfig');
+const dbConfig = require('../../../../db/config/config');
 const UserDTO = require('../../dtos/message.dto');
 const {STATUS} = require('../../../utils/constants/api.constants');
 const CustomError = require('../../../utils/errors/customError');

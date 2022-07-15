@@ -155,6 +155,8 @@ if (args.MODE === 'CLUSTER' && cluster.isPrimary) {
 
     const server = httpServer.listen(PORT, HOST, () => {
         console.log(`Server is running on port ${PORT} and the server is ${HOST}`);
+        console.log(`[${config.NODE_ENV.trim()}] Using ${config.DATA_SOURCE} as project's data source`);
+        console.log(`[${config.NODE_ENV.trim()}] Server is up and running on port => ${config.PORT}`);
     })
 
     server.on('error', (err) => {
