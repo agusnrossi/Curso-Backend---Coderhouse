@@ -1,7 +1,7 @@
 const express = require('express');
 const authRoutes = require('./api/auth/auth.routes');
 const infoRoutes = require('./api/info/info.routes');
-const ProductsDao = require('../models/daos/products/products.mongo.dao')
+const ProductsDao = require('../api/models/daos/products/products.mongo.dao')
 
 const productsDao = new ProductsDao()
 const router = express.Router()
