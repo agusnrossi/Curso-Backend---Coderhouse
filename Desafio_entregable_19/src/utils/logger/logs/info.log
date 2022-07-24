@@ -1,0 +1,72 @@
+[2022-05-30T20:06:40.491] [INFO] infoFile - Connected to DB!
+[2022-05-30T20:09:27.349] [INFO] infoFile - User registration successful!
+[2022-05-30T20:09:29.663] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 777,
+  messageTime: 728,
+  messageSize: 948,
+  response: '250 2.0.0 OK  1653952171 ov16-20020a056870cb9000b000f33ced2c50sm1582503oab.56 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<24b0ab0d-2b08-5cc7-c116-28fb69f1c621@GrandPC>'
+}
+[2022-05-30T20:14:46.413] [INFO] infoFile - User logued out!
+[2022-07-04T11:35:43.507] [INFO] infoFile - Connected to DB!
+[2022-07-04T11:37:34.862] [INFO] infoFile - User registration successful!
+[2022-07-04T11:37:37.399] [INFO] infoFile - {
+  accepted: [ 'atonomo.4s@gmail.com' ],
+  rejected: [],
+  envelopeTime: 514,
+  messageTime: 669,
+  messageSize: 964,
+  response: '250 2.0.0 OK  1656945456 y66-20020a1f3245000000b0036ca4583f08sm4518141vky.16 - gsmtp',
+  envelope: { from: '', to: [ 'atonomo.4s@gmail.com' ] },
+  messageId: '<e1e2817e-2f8a-4835-1e05-06d785d32ea4@LAPTOP-FIPRCV9J>'
+}
+[2022-07-04T11:37:55.145] [INFO] infoFile - User logued out!
+[2022-07-04T16:23:19.232] [INFO] infoFile - Connected to DB!
+[2022-07-04T16:47:06.666] [INFO] infoFile - Connected to DB!
+[2022-07-04T16:48:31.177] [INFO] infoFile - Connected to DB!
+[2022-07-04T16:58:57.437] [INFO] infoFile - Connected to DB!
+[2022-07-04T17:00:29.133] [INFO] infoFile - Connected to DB!
+[2022-07-04T17:05:39.272] [INFO] infoFile - Connected to DB!
+[2022-07-04T17:11:16.585] [INFO] infoFile - Connected to DB!
+[2022-07-04T17:19:16.026] [INFO] infoFile - Connected to DB!
+[2022-07-04T17:19:30.860] [INFO] infoFile - User logued out!
+[2022-07-04T17:19:55.846] [INFO] infoFile - User registration successful!
+[2022-07-04T17:19:58.303] [INFO] infoFile - {
+  accepted: [ 'proyectofinalcoder@gmail.com' ],
+  rejected: [],
+  envelopeTime: 816,
+  messageTime: 819,
+  messageSize: 1036,
+  response: '250 2.0.0 OK  1656965997 a17-20020ab06851000000b00382a99a6881sm1319791uas.32 - gsmtp',
+  envelope: { from: '', to: [ 'proyectofinalcoder@gmail.com' ] },
+  messageId: '<bd06bad2-802a-ffa1-2100-b2a17e68ae44@LAPTOP-FIPRCV9J>'
+}
+[2022-07-04T17:20:45.171] [INFO] infoFile - User registration successful!
+[2022-07-04T17:20:47.322] [INFO] infoFile - {
+  accepted: [ 'proyectofinalcoder@gmail.com' ],
+  rejected: [],
+  envelopeTime: 507,
+  messageTime: 586,
+  messageSize: 1036,
+  response: '250 2.0.0 OK  1656966046 v16-20020a056102303000b0035609fbb1a9sm4235126vsa.1 - gsmtp',
+  envelope: { from: '', to: [ 'proyectofinalcoder@gmail.com' ] },
+  messageId: '<8c3ba355-e51a-70ee-bce4-54cd37a3a7f1@LAPTOP-FIPRCV9J>'
+}
+[2022-07-04T17:21:34.071] [INFO] infoFile - User logued out!
+[2022-07-04T17:58:30.415] [INFO] infoFile - Connected to DB!
+[2022-07-04T17:59:33.683] [INFO] infoFile - User logued out!
+[2022-07-04T21:10:00.598] [INFO] infoFile - Connected to DB!
+[2022-07-04T21:11:53.721] [INFO] infoFile - User logued out!
+[2022-07-04T21:12:38.216] [INFO] infoFile - User registration successful!
+[2022-07-04T21:17:20.216] [INFO] infoFile - Connected to DB!
+[2022-07-04T21:17:39.342] [INFO] infoFile - User logued out!
+[2022-07-04T22:33:23.079] [INFO] infoFile - Connected to DB!
+[2022-07-04T22:33:29.352] [INFO] infoFile - User logued out!
+[2022-07-04T22:34:34.041] [INFO] infoFile - User registration successful!
+[2022-07-04T22:46:38.549] [INFO] infoFile - Connected to DB!
+[2022-07-04T22:49:14.436] [INFO] infoFile - User logued out!
+[2022-07-04T23:28:23.248] [INFO] infoFile - Connected to DB!
+[2022-07-04T23:32:38.431] [INFO] infoFile - User logued out!

@@ -1,0 +1,59 @@
+[2022-05-30T20:10:55.886] [ERROR] error - RestException [Error]: Authenticate
+    at success (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:1369:30)
+    at RawTask.call (D:\BackendCoderhouse\ProyectoFinal3\node_modules\asap\asap.js:40:19)
+    at flush (D:\BackendCoderhouse\ProyectoFinal3\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-05-30T20:10:56.535] [ERROR] error - RestException [Error]: Authenticate
+    at success (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (D:\BackendCoderhouse\ProyectoFinal3\node_modules\twilio\node_modules\q\q.js:1369:30)
+    at RawTask.call (D:\BackendCoderhouse\ProyectoFinal3\node_modules\asap\asap.js:40:19)
+    at flush (D:\BackendCoderhouse\ProyectoFinal3\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-07-04T17:20:21.042] [ERROR] error - Invalid user or password
+[2022-07-04T17:59:02.335] [ERROR] error - Invalid user or password
+[2022-07-04T17:59:04.177] [ERROR] error - Invalid user or password
+[2022-07-04T21:12:38.694] [ERROR] error - Error: Missing credentials for "PLAIN"
+    at SMTPConnection._formatError (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection.login (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:438:38)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-transport\index.js:271:32
+    at SMTPConnection.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:209:17)
+    at Object.onceWrapper (node:events:641:28)
+    at SMTPConnection.emit (node:events:527:28)
+    at SMTPConnection._actionEHLO (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:1319:14)
+    at SMTPConnection._processResponse (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:189:44) {
+  code: 'EAUTH',
+  command: 'API'
+}
+[2022-07-04T22:34:34.524] [ERROR] error - Error: Missing credentials for "PLAIN"
+    at SMTPConnection._formatError (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection.login (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:438:38)
+    at C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-transport\index.js:271:32
+    at SMTPConnection.<anonymous> (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:209:17)
+    at Object.onceWrapper (node:events:641:28)
+    at SMTPConnection.emit (node:events:527:28)
+    at SMTPConnection._actionEHLO (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:1319:14)
+    at SMTPConnection._processResponse (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\Users\agusr\Desktop\Curso Backend - Coderhouse\Tercer_entrega_Proyecto_Final\node_modules\nodemailer\lib\smtp-connection\index.js:189:44) {
+  code: 'EAUTH',
+  command: 'API'
+}
