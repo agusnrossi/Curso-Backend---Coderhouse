@@ -80,3 +80,14 @@ function purchaseCart(cartId){
   })
    .catch(error => console.error('Error:', error))
 }
+
+    fetch('/products/graphql', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({query: "{ getAllProducts {name, price, stock} }"})
+    })
+      .then(r => r.json())
+      .then(data => console.log('data returned:', data))
