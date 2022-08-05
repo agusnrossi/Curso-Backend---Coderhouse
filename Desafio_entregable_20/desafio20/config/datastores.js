@@ -49,14 +49,14 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
     adapter: 'sails-mongo',
-    url: 'mongodb://agusnrossi:Tottenham@cluster0.yrwhz.mongodb.net/ecommerce?retryWrites=true&w=majority',
+    url: 'mongodb://agusnrossi:Tottenham@cluster0-shard-00-00.yrwhz.mongodb.net:27017,cluster0-shard-00-01.yrwhz.mongodb.net:27017,cluster0-shard-00-02.yrwhz.mongodb.net:27017/?ssl=true&replicaSet=atlas-d1sh9k-shard-0&authSource=admin&retryWrites=true&w=majority',
 
   },
   // mongodb: {
   //   adapter: 'sails-mongo',
   //   username: 'agusnrossi',
   //   password:'Tottenham',
-  //   host: 'cluster0.yrwhz.mongodb.net/ecommerce?retryWrites=true&w=majority',
+  //   host: 'cluster0.yrwhz.mongodb.net/?ssl=true&replicaSet=atlas-d1sh9k-shard-0&authSource=admin&retryWrites=true&w=majority',
   //   port: 27017,
   //   database:'ecommerce',
   // }
