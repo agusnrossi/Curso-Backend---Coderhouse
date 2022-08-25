@@ -56,7 +56,8 @@ function deleteFromCart(productId, cartId){
       method: 'DELETE',
       headers:{
           'Content-Type': 'application/json'
-      }
+      },
+      mode:'no-cors'
   },
   ).then(res => res.json())
    .then((res)=>{
